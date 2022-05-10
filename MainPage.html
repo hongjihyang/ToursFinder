@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tour's Finder</title>
+    <link rel="stylesheet" href="CSS.css">
+    <script src="C:\Users\홍지향\Desktop\캡스톤\JS.js" defer></script>
+
+    <!-- 스와이퍼 불러오기 -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js"></script>
+    <!-- 폰트어썸 불러오기, 아이콘 사용할려면 꼭 있어야 함 -->
+    <script src="https://kit.fontawesome.com/267f4ea7f6.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- 전체메인 -->
+    <div class="Main_Home">
+        <!-- 탑바 -->
+        <div class="Top_bar">
+            <div class="logo">
+                <img src="C:\Users\홍지향\Desktop\캡스톤\img\Logo.png" alt="">
+            </div>
+            <div class="manu">
+                <ul class="bar">
+                    <li><a href="#">여행지</a></li>
+                    <li><a href="#">커뮤니티</a></li>
+                    <li><a href="#">정보</a></li>
+                </ul>
+            </div>
+            <a href="#"><i class="fa-regular fa-heart"></i></a>
+            <a href="#"><i class="fa-regular fa-bell"></i></a>
+            <a href="#"><i class="fa-regular fa-user"></i></a>
+            <a href="#" class="login">로그인</a>
+        </div>
+        <!-- 메인 -->
+        <div class="main">
+            <div class="survey_bar">
+                <p>당신의 여행 취향을 알려주세요. Tour's Finder에서 여행지를 추천해드립니다. </p>
+                <a href="#"> </a>
+                <div class="text"><a href="#">설문조사 하러가기</a></div>
+
+            </div>
+        </div>
+        <!-- 메인슬라이더 -->
+        <!-- Slider main container -->
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide slide1">
+                    <img src="C:\Users\홍지향\Desktop\캡스톤\img\silder_img1.jpg" alt="">
+                    <div class="text_box">
+                        <h2>곡성 세계장미축제</h2>
+                        <p>전남 곡성군</p>
+                    </div>
+                    <div class="text_box2">
+                        <section>전 세계 명품장미를 한 곳에서 볼 수 있는 국내 유일의 기회!</section>
+                        <section>일정 | 2022.05.21 - 2022.06.06</section>
+                    </div>
+                </div>
+                <div class="swiper-slide slide2">
+                    <img src="C:\Users\홍지향\Desktop\캡스톤\img\silder_img3.jpg" alt="">
+                    <div class="text_box">
+                        <h2>창덕궁 달빛기행</h2>
+                        <p>서울 창덕궁</p>
+                    </div>
+                    <div class="text_box2">
+                        <section>은은한 달빛아래 궁궐 곳곳의 숨은 옛이야기와 창덩궁의 야경까지 감상해보세요.</section>
+                        <section>일정 | 2022.05.21 - 2022.06.12</section>
+                    </div>
+                </div>
+                <div class="swiper-slide slide3">
+                    <img src="C:\Users\홍지향\Desktop\캡스톤\img\silder_img4.jpg" alt="">
+                    <div class="text_box">
+                        <h2>휴애리 봄 수국축제</h2>
+                        <p>제주 서귀포시</p>
+                    </div>
+                    <div class="text_box2">
+                        <section>알록달록한 빛깔로 고운 자태를 뽐내는 수국의 향연을 만끽하세요.</section>
+                        <section>일정 | 2022.03.25 - 2022.05.31</section>
+                    </div>
+                </div>
+                ...
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+        </div>
+
+
+    </div>
+
+</body>
+
+</html>

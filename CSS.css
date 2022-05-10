@@ -1,0 +1,306 @@
+/* 노멀라이징 */
+* {
+	margin: 0;
+	padding: 0;
+}
+
+ol,
+ul,
+li {
+	list-style: none;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+/* 폰트 */
+@font-face {
+    font-family: 'Happiness-Sans-Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2205@1.0/Happiness-Sans-Bold.woff2') format('woff2');
+
+}
+@font-face {
+    font-family: 'MinSans-Medium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/MinSans-Medium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'InfinitySans-RegularA1';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/InfinitySans-RegularA1.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/* 메인 */
+.Main_Home{
+    position: relative;
+    width: 1920px;
+    height: 2501px;
+}
+
+
+
+/* 탑바 */
+
+.Top_bar {
+	position: absolute;
+	width: 1920px;
+	height: 170px;
+	left: 0px;
+	top: 0px;
+
+	background: #ffffff;
+}
+
+.logo {
+	position: absolute;
+	width: 100px;
+	height: 50px;
+	left: 366px;
+	top: 21px;
+
+}
+
+.manu{
+    position: absolute;
+    width: 700px;
+    height: 25px;
+    left: 700px;
+    top: 77px;
+
+}
+
+.bar{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    color: #000000;
+}
+
+.bar>li:hover{
+    color: #00A19D;
+}
+
+.bar>li{
+    display: inline-block;
+    padding-left: 16.5%;
+    font-family: "InfinitySans-RegularA1";
+
+}
+
+.menu > .line {
+	position: relative;
+	margin-top: 6%;
+	border: 0.5px solid #b5b5b5;
+}
+
+.Top_bar> .manu > ul:hover {
+	color: #ddd;
+}
+
+.Top_bar> .manu > ul > li:hover{
+    font-weight: 600;
+	color: #00A19D;
+}
+
+.Top_bar> .manu > ul > li::after{
+    display: block;
+	content: "";
+	width: 0;
+	height: 2px;
+	background-color: #00A19D;
+	transition: 0.5s;
+	font-weight: 600;
+}
+
+.Top_bar> .manu > ul > li:hover::after{
+    width: 100%;
+}
+
+/* 아이콘 */
+.fa-heart{
+    position: absolute;
+    left: 77%;
+    top: 45.29%;
+    color: #E05D5D;
+  
+}
+.fa-bell{
+    position: absolute;
+    left: 79.5%;
+    top: 45.29%;
+    color: #E05D5D;
+}
+.fa-user{
+    position: absolute;
+    left: 82%;
+    top: 45.29%;
+    color: #E05D5D;
+}
+
+.login{
+    position: absolute;
+    width: 52px;
+    height: 21px;
+    left: 1613px;
+    top: 77px;
+    display: inline-block;
+
+    font-family: 'InfinitySans-RegularA1';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 21px;
+    /* identical to box height */
+
+
+    color: #000000;
+}
+
+.login:hover{
+    color: #E05D5D;
+    font-weight: 600;
+}
+
+/* 메인 */
+
+.Main_Home>.main>.survey_bar{
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 1920px;
+    height: 130px;
+    left: 0px;
+    top: 170px;
+
+    background: rgba(255, 179, 68, 0.15);
+    border: 1px solid #FFFFFF;
+}
+
+.Main_Home>.main>.survey_bar>p{
+    position: absolute;
+    width: 872px;
+    height: 35px;
+    left: 378px;
+    top: 50px;
+
+    font-family: 'MinSans-Medium';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 35px;
+
+    color: #00A19D;
+}
+
+.Main_Home>.main>.survey_bar> a{
+    position: absolute;
+    width: 190px;
+    height: 65px;
+    left: 1361px;
+    top: 33px;
+
+    background: rgba(255, 179, 68, 0.7);
+    border-radius: 5px;
+}
+.main>.survey_bar>.text{
+    position: absolute;
+    width: 139px;
+    height: 20px;
+    left: 1387px;
+    top: 57px;
+
+    font-family: 'MinSans-Medium';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 20px;
+
+    color: rgba(0, 0, 0, 0.65);
+
+}
+
+.main > .survey_bar> .text> a:hover{
+    color: #ffffff;
+    font-weight: 300;
+} 
+
+/* 메인네비게이터 */
+
+.swiper {
+    position: absolute;
+    width: 1100px;
+    height: 714px;
+    top: 450px;
+    
+    background-color: #fff8e5;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+  }
+
+.swiper > .swiper-wrapper > .swiper-slide > img {
+    position: absolute;
+    width: 1100px;
+    height: 527px;
+    top: 200px;
+}
+
+.swiper > .swiper-wrapper > .swiper-slide > .text_box{
+    position: absolute;
+    width: 607px;
+    height: 124px;
+    left: 5%;
+    top: 40px;
+
+
+
+}
+
+.swiper > .swiper-wrapper > .swiper-slide > .text_box > h2{
+    color: #E05D5D;
+    font-family: 'MinSans-Medium';
+    font-style: normal;
+
+}
+
+.swiper > .swiper-wrapper > .swiper-slide > .text_box > p{
+    position: absolute;
+    width: 150px;
+    height: 24px;
+    left: 40%;
+    top: 15px;
+
+    color: rgba(244, 93, 93, 0.7);
+    font-family: 'MinSans-Medium';
+    font-style: normal;
+}
+
+.swiper > .swiper-wrapper > .swiper-slide > .text_box2{
+    position: absolute;
+    width: 700px;
+    height: 68px;
+    left: 5%;
+    top: 100px;
+
+    color: rgba(244, 93, 93, 0.7);
+    font-weight: 500;
+    font-family: 'MinSans-Medium';
+    font-style: normal;
+}
+
+/* 슬라이더버튼커스텀 */
+
+
+.swiper-pagination{
+    position: absolute;
+    width: 41px;
+    height: 24px;
+    left: 70%;
+
+
+}
