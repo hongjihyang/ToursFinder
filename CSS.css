@@ -39,7 +39,7 @@ a {
 /* 메인 */
 .Main_Home{
     position: relative;
-    width: 1920px;
+    width: 100%;
     height: 2501px;
 }
 
