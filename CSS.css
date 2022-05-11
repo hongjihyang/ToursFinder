@@ -294,7 +294,23 @@ a {
     font-style: normal;
 }
 
-/* 슬라이더버튼커스텀 */
+/* 슬라이더 네비게이터 커스텀 */
+.swiper-pagination::after{
+    display: none;
+}
+
+.swiper-pagination{
+    position: absolute;
+    width: 41px;
+    height: 24px;
+    left: 90%;
+    top: 50px;
+
+    color: #767676;
+    font-family: 'MinSans-Medium';
+    font-style: normal;
+
+}
 
 
 
