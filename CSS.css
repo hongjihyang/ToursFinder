@@ -312,5 +312,39 @@ a {
 
 }
 
+/* 슬라이드버튼커스텀 */
+
+.swiper-button-prev::after{
+    display: none;
+}
+
+.swiper-button-next::after{
+    display: none;
+}
+
+.swiper-button-prev{
+    position: absolute;
+    left: 87%;
+    right: 25.26%;
+    top: 74px;
+    bottom: 69.08%;
+
+    width: 25px;
+    height: 25px;
+
+   
+}
+
+.swiper-button-next{
+    position: absolute;
+    left: 94%;
+    right: 25.26%;
+    top: 74px;
+    bottom: 69.08%;
+
+    width: 25px;
+    height: 25px;
+}
+
 
 
