@@ -40,11 +40,7 @@ a {
 .Main_Home{
     position: relative;
     width: 100%;
-<<<<<<< HEAD
     height: 2500px;
-=======
-    height: 2501px;
->>>>>>> a78a92c50da4e879fe4167b53e2605d13fcb6d2c
 }
 
 
@@ -298,12 +294,7 @@ a {
     font-style: normal;
 }
 
-<<<<<<< HEAD
-/* 슬라이더네비게이터커스텀 */
-
-=======
-/* 슬라이더 네비게이터 커스텀 */
->>>>>>> a78a92c50da4e879fe4167b53e2605d13fcb6d2c
+/* 슬라이더네비게이션커스텀 */
 .swiper-pagination::after{
     display: none;
 }
@@ -355,7 +346,6 @@ a {
     height: 25px;
 }
 
-<<<<<<< HEAD
 /* 서브슬라이더 */
 
 .subtext{
