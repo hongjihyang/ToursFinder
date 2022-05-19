@@ -294,7 +294,7 @@ a {
     font-style: normal;
 }
 
-/* 슬라이더네비게이션커스텀 */
+/* 슬라이더 네비게이터 커스텀 */
 .swiper-pagination::after{
     display: none;
 }
