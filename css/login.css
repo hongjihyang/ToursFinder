@@ -400,10 +400,10 @@ a {
 
 .login_main > .login_box > .kakao > img{
     position: absolute;
-    width: 30px;
-    height: 30px;
-    left: 8px;
-    top: 8px;
+    width: 25px;
+    height: 25px;
+    left: 11px;
+    top: 11px;
 
 
 }
@@ -423,10 +423,10 @@ a {
 
 .login_main > .login_box > .google > img{
     position: absolute;
-    width: 30px;
-    height: 30px;
-    left: 8px;
-    top: 8px;
+    width: 25px;
+    height: 25px;
+    left: 10.5px;
+    top: 10.5px;
 
 
 }
@@ -446,10 +446,10 @@ a {
 
 .login_main > .login_box > .apple > img{
     position: absolute;
-    width: 30px;
-    height: 30px;
-    left: 8px;
-    top: 8px;
+    width: 25px;
+    height: 25px;
+    left: 10px;
+    top: 10px;
 
 
 }
