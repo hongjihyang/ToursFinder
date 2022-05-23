@@ -223,7 +223,7 @@ a {
     background-color: #ffffff;
 }
 
-.login_main > .login_box > .id_box{
+.login_main > .login_box > #id{
     position: absolute;
     width: 400px;
     height: 56px;
@@ -231,27 +231,22 @@ a {
     top: 90px;
 
     background-color: #ffffff;
+    border-top: none;
+    border-left: none;
+    border-right: none;
     border-bottom: 1px solid #dbdbdb;
     transform: matrix(1, 0, 0, -1, 0, 0,);
-}
-.login_main > .login_box > .id_box > p{
-    position: absolute;
-    width: 180px;
-    height: 25px;
-    top: 15px;
+
 
     font-style: normal;
     font-size: 18px;
     line-height: 25px;
     font-family: 'MinSans-Medium';
     font-weight: 500;
-
-    color: #767676;
-
 }
 
 
-.login_main > .login_box > .ps_box{
+.login_main > .login_box > #password{
     position: absolute;
     width: 400px;
     height: 56px;
@@ -259,23 +254,18 @@ a {
     top: 180px;
 
     background-color: #ffffff;
+    border-top: none;
+    border-left: none;
+    border-right: none;
     border-bottom: 1px solid #dbdbdb;
     transform: matrix(1, 0, 0, -1, 0, 0,);
-}
-.login_main > .login_box > .ps_box > p{
-    position: absolute;
-    width: 200px;
-    height: 25px;
-    top: 15px;
+
 
     font-style: normal;
     font-size: 18px;
     line-height: 25px;
     font-family: 'MinSans-Medium';
     font-weight: 500;
-
-    color: #767676;
-
 }
 
 
@@ -323,7 +313,7 @@ a {
     color: #767676;
 }
 
-.login_main > .login_box > .btn-3d{
+.login_main > .login_box > #btn{
     position: absolute;
     width: 400px;
     height: 56px;
@@ -333,11 +323,11 @@ a {
     background-color: #00A19D;
 }
 
- .login_main > .login_box > .btn-3d > p{
+ .login_main > .login_box > #btn > p{
     position: absolute;
     width: 70px;
     height: 25px;
-    left: 180px;
+    left: 175px;
     top: 15px;
 
     font-family: 'MinSans-Medium';
