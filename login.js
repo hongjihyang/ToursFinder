@@ -1,6 +1,6 @@
 
 document.querySelector("#btn").addEventListener("click", () => {
-    const id = "admin";
+    const id = "asdfi16580";
     const password = "1234";
  
     if(id == document.querySelector("#id").value) {
