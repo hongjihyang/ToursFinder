@@ -126,19 +126,24 @@ a {
     position: absolute;
     left: 77%;
     top: 45.29%;
-    color: #E05D5D;
+    color: #000000;
   
 }
+
 .fa-bell{
     position: absolute;
     left: 79.5%;
     top: 45.29%;
-    color: #E05D5D;
+    color: #000000;
 }
 .fa-user{
     position: absolute;
     left: 82%;
     top: 45.29%;
+    color: #000000;
+}
+
+.fa-user:hover, .fa-bell:hover, .fa-heart:hover{
     color: #E05D5D;
 }
 
@@ -318,7 +323,7 @@ a {
     color: #767676;
 }
 
-.login_main > .login_box > .login_check_box{
+.login_main > .login_box > .btn-3d{
     position: absolute;
     width: 400px;
     height: 56px;
@@ -328,7 +333,7 @@ a {
     background-color: #00A19D;
 }
 
-.login_main > .login_box > .login_check_box > p{
+ .login_main > .login_box > .btn-3d > p{
     position: absolute;
     width: 70px;
     height: 25px;

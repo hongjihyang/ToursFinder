@@ -42,3 +42,8 @@ new Swiper('.swiper-container', {
 	},
 
 });
+
+
+$('btn-3d').click(function(event){
+  event.preventDefault(); 
+});
