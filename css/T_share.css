@@ -218,7 +218,7 @@ a {
 }
 
 
-.Sidebar > .cm > .side > ul {
+.Main_Home > .Sidebar > .cm > .side > ul {
     position: absolute;
     width: 150px;
     height: 185px;
@@ -235,15 +235,90 @@ a {
     color: #767676;
 }
 
-.Sidebar > .cm > .side > ul > li{
+.Main_Home > .Sidebar > .cm > .side > ul > li{
     margin-bottom: 50%;
 }
 
 
+.Sidebar > .cm > .side > ul > .T_share{
+    font-size: 19px;
+    font-weight: 500;
+    color: #000000;
+}
+
+.T_main{
+    position: absolute;
+    width: 140px;
+    height: 25px;
+    left: 42%;
+    top: 300px;
+
+    font-family: 'MinSans-Medium';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 25px;
+
+    color: #000000;
+
+}
+
+.T_main > .btn{
+    background: none;
+    border: 0;
+}
+
+.T_main > .btn{
+    position: absolute;
+    display: block;
+    width: 65px;
+    height: 20px;
+    left: 580px;
+    top: 20px; 
+    
+}
+
+.T_main > .btn{
+    text-align: center;
+    box-sizing: border-box;
+    width: 65px;
+    height: 25px;
+
+    background-color: #ffffff;
+    border: 1px solid #767676;
+    border-radius: 5px;
+}
 
 
+.T_main > .btn a{
+    font-family: 'InfinitySans-RegularA1';
+    font-style: normal;
+    font-size: 13px;
+    line-height: 15px;
+
+    color: #000000;
+}
 
 
+/* 여행지공유 리스트 */
+
+.T_main > .T_list{
+    position: absolute;
+    width: 600px;
+    height: 160px;
+    left: 30%;
+    top: 300px;
+}
+
+ .T_list >ul > li>  img {
+     position: absolute;
+     width: 123px;
+     height: 137px;
+     left: 300px;
+     top: 300px;
+
+    
+}
 
 
 
