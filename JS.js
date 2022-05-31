@@ -41,6 +41,11 @@ new Swiper('.swiper-container', {
 		clickable : true, // 페이징을 클릭하면 해당 영역으로 이동, 필요시 지정해 줘야 기능 작동
 	},
 
+  autoplay: {
+    delay: 5000, // 10초마다 슬라이드 넘김
+    disableOnInteraction: false, // 자동 재생 중 건드려도 비활성화되지 않음
+  },
+
 });
 
 
