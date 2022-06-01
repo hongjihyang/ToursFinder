@@ -115,7 +115,7 @@ a {
     z-index: 1000;
 }
 
-.top-bar-wrap > .top-bar > .menu-box > ul > li {
+.top-bar-wrap>.top-bar>.menu-box>ul>li {
     position: relative;
     display: inline-block;
     margin-left: 50px;
@@ -123,42 +123,43 @@ a {
     line-height: 115px;
 }
 
-.nav-box > li:hover{
+.nav-box>li:hover {
     color: #00A19D;
 }
 
-.menu-box > ul> .line{
+.menu-box>ul>.line {
     position: relative;
     margin-top: 5%;
     border: 0.5px solid #b5b5b5;
 }
 
-.top-bar > .menu-box > ul:hover{
+.top-bar>.menu-box>ul:hover {
     color: #ddd;
 }
 
-.top-bar > .menu-box > ul > li:hover{
+.top-bar>.menu-box>ul>li:hover {
     font-weight: 600;
     color: #00A19D;
 }
 
-.top-bar > .menu-box > ul > li::after{
+.top-bar>.menu-box>ul>li::after {
     display: block;
-	content: "";
-	width: 0;
-	height: 2px;
-	background-color: #00A19D;
-	transition: 0.5s;
-	font-weight: 600;
+    content: "";
+    width: 0;
+    height: 2px;
+    background-color: #00A19D;
+    transition: 0.5s;
+    font-weight: 600;
 }
 
-.top_bar> .manu-box > ul > li:hover::after{
+.top_bar>.manu-box>ul>li:hover::after {
     width: 100%;
 }
 
+
 /* 아이콘 */
 
-.top-bar-wrap>.top-bar > .menu-box >.icon-box {
+.top-bar-wrap>.top-bar>.menu-box>.icon-box {
     position: absolute;
     width: 230px;
     height: 115px;
@@ -167,11 +168,11 @@ a {
     transform: translateX(-70%);
 }
 
-.top-bar-wrap>.top-bar > .menu-box >.icon-box > a{
+.top-bar-wrap>.top-bar>.menu-box>.icon-box>a {
     margin-left: 25px;
 }
 
-.top-bar-wrap>.top-bar > .menu-box >.icon-box > a:hover{
+.top-bar-wrap>.top-bar>.menu-box>.icon-box>a:hover {
     color: #E05D5D;
 }
 
@@ -211,3 +212,45 @@ a {
     left: -10px;
     border: 0.5px solid #c4c4c4;
 }
+
+
+/* 메인 */
+
+.t_text {
+    position: relative;
+    top: 200px;
+    left: -830px;
+}
+
+
+.button-box {
+    width: 100%;
+}
+
+.button_list {
+    position: relative;
+    top: 250px;
+    left: 3%;
+}
+
+.button_btn > a{
+    box-sizing: border-box;
+    margin-right: 10px;
+    padding: 10px 25px;
+
+    width: 107px;
+    height: 10px;
+    background: #ffffff;
+    border-radius: 29px;
+    border: 0.5px solid #b5b5b5;
+}
+
+.button_btn > a:hover{
+    background: #00A19D;
+    border: none;
+    color: #ffffff;
+}
+
+
+
+
