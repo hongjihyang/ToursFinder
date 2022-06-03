@@ -244,12 +244,19 @@ a {
     border-radius: 29px;
     border: 0.5px solid #b5b5b5;
 }
-
+/* 
 .button_btn > a:hover{
     background: #00A19D;
     border: none;
     color: #ffffff;
+} */
+
+.clicked{
+    color: #00A19D;
+    font-weight: 500;
 }
+
+
 
 
 
