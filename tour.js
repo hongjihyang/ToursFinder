@@ -1,4 +1,4 @@
-var div2 = document.getElementsByClassName("div2");
+let region = document.getElementsByClassName("region");
 
 function handleClick(event) {
   console.log(event.target);
@@ -10,8 +10,8 @@ function handleClick(event) {
   if (event.target.classList[1] === "clicked") {
     event.target.classList.remove("clicked");
   } else {
-    for (var i = 0; i < div2.length; i++) {
-        div2[i].classList.remove("clicked");
+    for (var i = 0; i < region.length; i++) {
+      region[i].classList.remove("clicked");
     }
 
     event.target.classList.add("clicked");
@@ -19,9 +19,10 @@ function handleClick(event) {
 }
 
 function init() {
-  for (var i = 0; i < div2.length; i++) {
-    div2[i].addEventListener("click", handleClick);
+  for (var i = 0; i < region.length; i++) {
+    region[i].addEventListener("click", handleClick);
   }
 }
 
 init();
+
