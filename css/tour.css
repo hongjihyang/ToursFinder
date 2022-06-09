@@ -1,6 +1,7 @@
 body {
     font-family: 'MinSans-Medium';
-    height: auto;
+    overflow-x:hidden; 
+    overflow-y:auto;
 }
 
 /* 노멀라이징 */
@@ -38,7 +39,7 @@ a {
 }
 
 .con {
-    width: 1200px;
+    width: 1130px;
     margin: 0 auto;
 }
 
@@ -68,14 +69,11 @@ a {
     font-weight: normal;
     font-style: normal;
 }
-
-/* 
+ 
 메인
 .Main_Home{
-    position: relative;
-    width: 100%;
-    height: auto;
-} */
+    width: 1920px;
+} 
 
 
 
@@ -96,9 +94,7 @@ a {
     height: 115px;
 }
 
-.top-bar-wrap>.top-bar>.logo-box>.logo {
-    line-height: 134px;
-}
+
 
 .top-bar-wrap>.top-bar>.menu-box {
     width: 700px;
@@ -218,49 +214,67 @@ a {
 
 /* 메인 */
 
+
 .t_text {
     position: relative;
     top: 200px;
-    left: -830px;
+    left: -865px;
 }
 
 
-.button-box {
-    width: 100%;
+input[type="radio"]{
+    display: none;
+}
+input[type="radio"] + label{
+    display: inline-block;
+    padding: 10px 50px;
+    background-color: #fff;
+    color: #000000;
+    font-size: 14px;
+    cursor: pointer;
+    border: 1px solid #aaa;
+}
+input[type="radio"]:checked +label{
+    background-color: #00A19D;
+    color: #fff;
+
 }
 
-.button_list {
+.conbox{
+    position: absolute;
+    width: 1230px;
+    height: 1050px;
+    top: 130px;
+    background: #fff;
+    margin: 0 auto;
+    display: none;
+}
+
+input[id="tab01"]:checked ~ .c1{
+    display: block;
+}
+
+input[id="tab02"]:checked ~ .c2{
+    display: block;
+}
+
+input[id="tab03"]:checked ~ .c3{
+    display: block;
+}
+
+input[id="tab04"]:checked ~ .c4{
+    display: block;
+}
+input[id="tab05"]:checked ~ .c5{
+    display: block;
+}
+
+.tab_content{
     position: relative;
     top: 250px;
-    left: 3%;
-}
-
-.button_btn>a {
-    box-sizing: border-box;
-    margin-right: 10px;
-    padding: 10px 25px;
-
-    width: 107px;
-    height: 10px;
-    background: #ffffff;
-    border-radius: 29px;
-    border: 0.5px solid #b5b5b5;
-}
-
-/* 
-.button_btn > a:hover{
-    background: #00A19D;
-    border: none;
-    color: #ffffff;
-} */
-
-.clicked {
-    color: #00A19D;
-    font-weight: 500;
 }
 
 
-/* 경기도 리스트 */
 img {
     /* 이미지 주변에 쓸떼없이 생기는 여백이 사라진다. 즉 글자로서의 특징이 사라진다. */
     display: block;
@@ -269,28 +283,20 @@ img {
     height: 100%;
 }
 
-.gg_list .cell {
+.conbox > ul> li{
+    margin-bottom: 70px;
+}
+
+.conbox > ul> li> img{
     width: 390px;
     height: 280px;
-    padding-left: 20px;
     padding-right: 20px;
-    margin-top: 200px;
-    margin-bottom: 50px;
     cursor: pointer;
-
 }
 
-.GG_list_group>.gg_list {
-    position: relative;
-    left: 1.5%;
-    top: 100px;
-}
 
-.cell>.text {
-    margin-top: 30px;
-}
 
-.cell>.text>p {
+.conbox> ul> li >.text>p {
     margin-top: 8px;
 
     font-size: 15px;
@@ -303,23 +309,24 @@ img {
     color: #353535;
 }
 
-.cell>.text_box {
+.conbox> ul> li> .text_box {
     position: relative;
     width: 70px;
     height: 37px;
-    top: -154.9px;
+    left: 320px;
+    top: -10px;
 
     background: #FFB344;
 }
 
-.cell>.text_box>p {
+.conbox > ul > li >.text_box > p {
     text-align: center;
     margin-top: 13%;
 
     font-style: normal;
     font-weight: 600;
     font-size: 15px;
-    line-height: 18px;
+    line-height: 37px;
     /* identical to box height */
 
     letter-spacing: 0.02em;
