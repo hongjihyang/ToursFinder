@@ -1,5 +1,7 @@
 body {
     font-family: 'MinSans-Medium';
+    overflow-x:hidden; 
+    overflow-y:auto;
 }
 
 /* 노멀라이징 */
@@ -19,10 +21,6 @@ a {
 	text-decoration: none;
 }
 
-body{
-    overflow-x: hidden;
-    overflow-y: auto;
-}
 
 /* 라이브러리 */
 .cell {
@@ -40,7 +38,7 @@ body{
 }
 
 .con {
-    width: 1200px;
+    width: 1150px;
     margin: 0 auto;
 }
 
@@ -309,17 +307,18 @@ body{
     border-radius: 70%;
     border: 1px solid #dbdbdb;
 }
-.login_main > .login_box > .login_chbox > p{
-    position: absolute;
-    width: 120px;
-    height: 20px;
-    left: 40px;
 
-    font-style: normal;
+input[type="checkbox"] + label{
+    position: relative;
+    width: 105px;
+    height: 20px;
+    top: 255px;
+    left: 18%;
+
     font-size: 15px;
-    font-weight: 300px;
+    font-style: normal;
+    font-weight: 500;
     line-height: 20px;
-    font-family: 'MinSans-Medium';
 
     color: #767676;
 }

@@ -39,7 +39,7 @@ a {
 }
 
 .con {
-    width: 1130px;
+    width: 1150px;
     margin: 0 auto;
 }
 
@@ -217,7 +217,7 @@ a {
 
 .t_text {
     position: relative;
-    top: 200px;
+    top: 115px;
     left: -865px;
 }
 
@@ -244,7 +244,7 @@ input[type="radio"]:checked +label{
     position: absolute;
     width: 1230px;
     height: 1050px;
-    top: 130px;
+    top: 110px;
     background: #fff;
     margin: 0 auto;
     display: none;
@@ -275,7 +275,7 @@ input[id="tab05"]:checked ~ .c5{
 }
 
 
-img {
+.conbox > img {
     /* 이미지 주변에 쓸떼없이 생기는 여백이 사라진다. 즉 글자로서의 특징이 사라진다. */
     display: block;
     /* 이걸 해줘야 이미지 너비가 유연해집니다. */
@@ -314,7 +314,7 @@ img {
     width: 70px;
     height: 37px;
     left: 320px;
-    top: -10px;
+    top: -15px;
 
     background: #FFB344;
 }
@@ -335,6 +335,10 @@ img {
 
 }
 
+.tab_content{
+    position: relative;
+    top: 150px;
+}
 
 
 

@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tour's Finder</title>
     <script type="text.javascript" src="jquery-3.6.0.min.js"></script>
-       <!-- 스와이퍼 불러오기 -->
+    <!-- 스와이퍼 불러오기 -->
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.min.css">
@@ -18,57 +19,63 @@
     <link rel="stylesheet" href=".\css\QA.css">
     <script src="JS.js" defer></script>
 </head>
+
 <body>
-    <div class="Main_Home">
-        <!-- 탑바 -->
-        <div class="Top_bar">
-            <a href="MainPage.html" class="logo">
-                <img src=".\img\Logo.png" alt="">
-            </a>
-            <div class="manu">
-                <ul class="bar">
-                    <li class="tour"><a href="tour.html">여행지</a></li>
-                    <li class="comm"><a href="community.html">커뮤니티</a></li>
-                    <li class="info"><a href="info.html">정보</a></li>
-                </ul>
+
+    <!-- 상단바 -->
+    <div class="top-bar-wrap">
+
+        <div class="top-bar con row">
+
+            <div class="logo-box cell">
+
+                <div class="logo">
+                    <a href="MainPage.html"><img src=".\img\Logo.png" alt="로고이미지"></a>
+                </div>
             </div>
-            <a href="#"><i class="fa-regular fa-heart"></i></a>
-            <a href="#"><i class="fa-regular fa-bell"></i></a>
-            <a href="#"><i class="fa-regular fa-user"></i></a>
-            <a href="login.html" class="login">로그인</a>
-            <div class="line"></div>
+
+            <!-- 메뉴 -->
+            <div class="menu-box cell">
+
+                <ul class="nav-box row">
+
+                    <li class="cell"><a href="tour.html" class="tour">여행지</a></li>
+                    <li class="cell"><a href="community.html" class="comm">커뮤니티</a></li>
+                    <li class="cell"><a href="Reco.html" class="reco">추천</a></li>
+                </ul>
+
+                <div class="icon-box cell-r">
+                    <a href="#"><i class="fa-regular fa-heart"></i></a>
+                    <a href="#"><i class="fa-regular fa-bell "></i></a>
+                    <a href="#"><i class="fa-regular fa-user"></i></a>
+                </div>
+
+                <div class="login-box cell-r">
+                    <a href="login.html" class="login">로그인</a>
+                </div>
+            </div>
+
+            <div class="topbar-line"></div>
         </div>
 
-        
-        <!-- 메인 -->
+    </div>
 
-        <div class="Sidebar">
-            <section class="cm">
+
+    <!-- 메인 -->
+
+    <div class="Sidebar con row">   
+            <nav class="side cell">
                 <h1>커뮤니티</h1>
                 <div class="line1"></div>
 
-                <nav class="side">
-                    <ul class="sb">
-                        <li class="T_share"><a href="T_share.html">여행지 공유</a></li>
-                        <li class="QA"><a href="QA.html">Q & A</a></li>
-                        <li class="an"><a href="an.html">공지사항</a></li>
-                    </ul>
-                </nav> 
-            </section>
-        </div>
-
-        <div class="QA_main">
-            <p>Q & A</p>
-        </div>
-
-
-
-
-
-        <!-- 푸터 -->
-        <footer class="footer">
-
-        </footer>
+                <ul class="sb">
+                    <li class="T_share"><a href="T_share.html">여행지 공유</a></li>
+                    <li class="QA"><a href="QA.html">Q & A</a></li>
+                    <li class="an"><a href="an.html">공지사항</a></li>
+                </ul>
+            </nav>
     </div>
+
 </body>
+
 </html>

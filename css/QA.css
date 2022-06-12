@@ -1,3 +1,10 @@
+body {
+    font-family: 'MinSans-Medium';
+    overflow-x:hidden; 
+    overflow-y:auto;
+}
+
+
 /* 노멀라이징 */
 * {
 	margin: 0;
@@ -13,6 +20,32 @@ li {
 a {
 	color: inherit;
 	text-decoration: none;
+}
+
+
+/* 라이브러리 */
+.cell {
+    float: left;
+}
+
+.cell-r {
+    float: right;
+}
+
+.row::after {
+    clear: both;
+    content: "";
+    display: block;
+}
+
+.con {
+    width: 1150px;
+    margin: 0 auto;
+}
+
+.con1 {
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* 폰트 */
@@ -38,82 +71,77 @@ a {
 
 /* 메인 */
 .Main_Home{
-    position: relative;
-    width: 100%;
-    height: 2500px;
+    width: 1920px;
 }
 
 
 
 /* 탑바 */
 
-.Top_bar {
-	position: relative;
-	width: 100%;
-	height: 170px;
-	left: 0px;
-	top: 0px;
 
-	background: #ffffff;
+.top-bar-wrap {
+    width: 100%;
 }
 
-.logo {
-	position: absolute;
-	width: 100px;
-	height: 50px;
-	left: 366px;
-	top: 21px;
-
+.top-bar-wrap>.top-bar {
+    height: 105px;
 }
 
-.manu{
-    position: absolute;
+
+.top-bar-wrap>.top-bar>.logo-box {
+    width: 167px;
+    height: 115px;
+}
+
+.top-bar-wrap>.top-bar>.logo-box>.logo {
+    line-height: 134px;
+}
+
+.top-bar-wrap>.top-bar>.menu-box {
     width: 700px;
-    height: 25px;
-    left: 700px;
-    top: 77px;
-
-}
-
-.bar{
-    font-weight: 400;
+    height: 115px;
     font-size: 18px;
+    position: relative;
     line-height: 25px;
     color: #000000;
 }
 
-.bar>li:hover{
+
+.top-bar-wrap>.top-bar>.menu-box>ul {
+    position: absolute;
+    left: 200px;
+    top: 20px;
+    z-index: 1000;
+}
+
+.top-bar-wrap > .top-bar > .menu-box > ul > li {
+    position: relative;
+    display: inline-block;
+    margin-left: 50px;
+    margin-right: 60px;
+    line-height: 115px;
+}
+
+.nav-box > li:hover{
     color: #00A19D;
 }
 
-.bar>li{
-    display: inline-block;
-    padding-left: 16.5%;
-    font-family: "InfinitySans-RegularA1";
-
+.menu-box > ul> .line{
+    position: relative;
+    margin-top: 5%;
+    border: 0.5px solid #b5b5b5;
 }
 
-.menu > .line {
-	position: relative;
-	margin-top: 6%;
-	border: 0.5px solid #b5b5b5;
+.top-bar > .menu-box > ul:hover{
+    color: #ddd;
 }
 
-.Top_bar> .manu > ul> .tour{
-	color: #ddd;
-}
-
-.Top_bar> .manu > ul> .info{
-	color: #ddd;
-}
-
-
-.Top_bar> .manu > ul > li:hover{
+.top-bar > .menu-box > ul > li:hover{
     font-weight: 600;
-	color: #00A19D;
+    color: #00A19D;
 }
 
-.Top_bar> .manu > ul > li::after{
+.top-bar > .menu-box > ul > li::after{
     display: block;
 	content: "";
 	width: 0;
@@ -123,48 +151,38 @@ a {
 	font-weight: 600;
 }
 
-.Top_bar> .manu > ul > li:hover::after{
+.top_bar> .manu-box > ul > li:hover::after{
     width: 100%;
 }
 
-.manu> .bar> .comm{
-    font-weight: 500;
-    color: #00A19D;
-}
-
 /* 아이콘 */
-.fa-heart{
+
+.top-bar-wrap>.top-bar > .menu-box >.icon-box {
     position: absolute;
-    left: 77%;
-    top: 45.29%;
-    color: #000000;
-  
+    width: 230px;
+    height: 115px;
+    top: 65px;
+    right: -70%;
+    transform: translateX(-70%);
 }
 
-.fa-bell{
-    position: absolute;
-    left: 79.5%;
-    top: 45.29%;
-    color: #000000;
-}
-.fa-user{
-    position: absolute;
-    left: 82%;
-    top: 45.29%;
-    color: #000000;
+.top-bar-wrap>.top-bar > .menu-box >.icon-box > a{
+    margin-left: 25px;
 }
 
-.fa-user:hover, .fa-bell:hover, .fa-heart:hover{
+.top-bar-wrap>.top-bar > .menu-box >.icon-box > a:hover{
     color: #E05D5D;
 }
 
-
-.login{
+/* 로그인 */
+.login {
     position: absolute;
     width: 52px;
     height: 21px;
-    left: 1613px;
-    top: 77px;
+    top: 66px;
+    right: -48%;
+    transform: translateX(-48%);
+
     display: inline-block;
 
     font-family: 'InfinitySans-RegularA1';
@@ -178,91 +196,65 @@ a {
     color: #000000;
 }
 
-.login:hover{
+.login:hover {
     color: #E05D5D;
     font-weight: 600;
 }
 
-.line{
+
+
+.topbar-line {
     position: absolute;
     width: 100%;
-    height: 0;
-    top: 170px;
-
+    top: 150px;
+    left: -10px;
     border: 0.5px solid #c4c4c4;
 }
 
-/* 메인 사이드바 */
 
-.Main_Home > .Sidebar {
-    position: absolute;
-    width: 185px;
+/* 메인 */
+.Sidebar {
+    position: relative;
+    width: 190px;
     height: 350px;
-    left: 22%;
-    top: 300px;
 }
 
-.Main_Home > .Sidebar > .cm > h1{
-    font-family: 'MinSans-Medium';
-    line-height: 10px;
+.Sidebar > .side{
+    position: relative;
+    left: -220%;
+    top: 100px;
 }
 
-.Main_Home > .Sidebar > .cm > .line1{
-    position: absolute;
-    width: 185px;
-    height: 0px;
-    left: -40px;
-    top: 70px;
-
-    border: 1px solid #767676;
-}
-
-
-.Sidebar > .cm > .side > ul {
-    position: absolute;
+.Sidebar > .side >.line1{
+    position: relative;
+    top: 15px;
     width: 150px;
-    height: 185px;
-    left: 10px;
-    top: 160px;
+    border: 1px solid #767676;
+    left: -12%;
+}
 
+.Sidebar > .side > .sb{
+    position: relative;
+    top: 50px;
+}
 
-    font-family: 'InfinitySans-RegularA1';
-    font-weight: 100;
-    font-style: normal;
+.Sidebar > .side > .sb > li{
+    margin-top: 50px;
     font-size: 18px;
-    line-height: 21px;
-
+    font-weight: 500;
+    font-style: normal;
+    line-height: 18px;
     color: #767676;
 }
 
-.Sidebar > .cm > .side > ul > li{
-    margin-bottom: 50%;
-}
-
-.Sidebar > .cm > .side > ul > .QA{
+.Sidebar > .side > .sb > .QA{
     font-size: 19px;
-    font-weight: 500;
+    font-weight: 600;
     color: #000000;
 }
 
 
 
-.QA_main{
-    position: absolute;
-    width: 140px;
-    height: 25px;
-    left: 42%;
-    top: 300px;
-
-    font-family: 'MinSans-Medium';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 25px;
-
-    color: #000000;
-
-}
 
 
 
@@ -278,14 +270,3 @@ a {
 
 
 
-
-
-/* 푸터 */
-.footer{
-    position: absolute;
-    width: 100%;
-    height: 250px;
-    bottom: 0;
-
-    background-color: rgba(0, 0, 0, 0.5);
-}
