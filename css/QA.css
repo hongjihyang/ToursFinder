@@ -1,7 +1,7 @@
 body {
     font-family: 'MinSans-Medium';
     overflow-x:hidden; 
-    overflow-y:auto;
+    overflow-y: scroll;
 }
 
 
