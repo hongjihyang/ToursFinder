@@ -465,5 +465,9 @@ input[type="radio"]+label{
     border: none;
     border-radius: 10px;
     color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    font-style: normal;
+    line-height: 50px;
 }
 
