@@ -1,0 +1,590 @@
+body {
+    font-family: 'MinSans-Medium';
+    overflow-x:hidden; 
+    overflow-y: scroll;
+}
+
+
+/* 노멀라이징 */
+* {
+	margin: 0;
+	padding: 0;
+}
+
+ol,
+ul,
+li {
+	list-style: none;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+
+/* 라이브러리 */
+.cell {
+    float: left;
+}
+
+.cell-r {
+    float: right;
+}
+
+.row::after {
+    clear: both;
+    content: "";
+    display: block;
+}
+
+.con {
+    width: 1150px;
+    margin: 0 auto;
+}
+
+.con1 {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* 폰트 */
+@font-face {
+    font-family: 'Happiness-Sans-Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2205@1.0/Happiness-Sans-Bold.woff2') format('woff2');
+
+}
+@font-face {
+    font-family: 'MinSans-Medium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/MinSans-Medium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'InfinitySans-RegularA1';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/InfinitySans-RegularA1.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/* 메인 */
+.Main_Home{
+    width: 1920px;
+}
+
+
+
+/* 탑바 */
+
+
+.top-bar-wrap {
+    width: 100%;
+}
+
+.top-bar-wrap>.top-bar {
+    height: 105px;
+}
+
+
+.top-bar-wrap>.top-bar>.logo-box {
+    width: 167px;
+    height: 115px;
+}
+
+.top-bar-wrap>.top-bar>.logo-box>.logo {
+    line-height: 134px;
+}
+
+.top-bar-wrap>.top-bar>.menu-box {
+    width: 700px;
+    height: 115px;
+    font-size: 18px;
+    position: relative;
+    line-height: 25px;
+    color: #000000;
+}
+
+
+.top-bar-wrap>.top-bar>.menu-box>ul {
+    position: absolute;
+    left: 200px;
+    top: 20px;
+    z-index: 1000;
+}
+
+.top-bar-wrap > .top-bar > .menu-box > ul > li {
+    position: relative;
+    display: inline-block;
+    margin-left: 50px;
+    margin-right: 60px;
+    line-height: 115px;
+}
+
+.nav-box > li:hover{
+    color: #00A19D;
+}
+
+.menu-box > ul> .line{
+    position: relative;
+    margin-top: 5%;
+    border: 0.5px solid #b5b5b5;
+}
+
+.top-bar > .menu-box > ul:hover{
+    color: #ddd;
+}
+
+.top-bar > .menu-box > ul > li:hover{
+    font-weight: 600;
+    color: #00A19D;
+}
+
+.top-bar > .menu-box > ul > li::after{
+    display: block;
+	content: "";
+	width: 0;
+	height: 2px;
+	background-color: #00A19D;
+	transition: 0.5s;
+	font-weight: 600;
+}
+
+.top_bar> .manu-box > ul > li:hover::after{
+    width: 100%;
+}
+
+/* 아이콘 */
+
+.top-bar-wrap>.top-bar > .menu-box >.icon-box {
+    position: absolute;
+    width: 230px;
+    height: 115px;
+    top: 65px;
+    right: -70%;
+    transform: translateX(-70%);
+}
+
+.top-bar-wrap>.top-bar > .menu-box >.icon-box > a{
+    margin-left: 25px;
+}
+
+.top-bar-wrap>.top-bar > .menu-box >.icon-box > a:hover{
+    color: #E05D5D;
+}
+
+/* 로그인 */
+.login {
+    position: absolute;
+    width: 52px;
+    height: 21px;
+    top: 66px;
+    right: -48%;
+    transform: translateX(-48%);
+
+    display: inline-block;
+
+    font-family: 'InfinitySans-RegularA1';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 21px;
+    /* identical to box height */
+
+
+    color: #000000;
+}
+
+.login:hover {
+    color: #E05D5D;
+    font-weight: 600;
+}
+
+
+
+.topbar-line {
+    position: absolute;
+    width: 100%;
+    top: 150px;
+    left: -10px;
+    border: 0.5px solid #c4c4c4;
+}
+
+
+/* 메인 */
+.Sidebar {
+    position: relative;
+    width: 190px;
+    height: 350px;
+}
+
+.Sidebar > .side{
+    position: relative;
+    left: -220%;
+    top: 100px;
+}
+
+.Sidebar > .side >.line1{
+    position: relative;
+    top: 15px;
+    width: 170px;
+    border: 1px solid #767676;
+    left: -12%;
+}
+
+.Sidebar > .side > .sb{
+    position: relative;
+    top: 50px;
+
+}
+
+.Sidebar > .side > .sb > li{
+    margin-top: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    font-style: normal;
+    line-height: 18px;
+    color: #767676;
+    text-align: center;
+}
+
+.Sidebar > .side > .sb > .My_info{
+    font-size: 19px;
+    font-weight: 600;
+    color: #3f3f3f;
+}
+
+.My_info h3{
+    position: relative;
+    top: -230px;
+    left: 37%;
+
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 21px;
+
+    color: #171717;
+}
+
+.info_box{
+    position: relative;
+    width: 511px;
+    height: 575px;
+
+    top: -180px;
+    left: 37%;
+}
+
+/* 이름 */
+.info_box > .user_name{
+    width: 511px;
+    height: 54px;
+
+    border-top: 1px solid rgba(118, 118, 118, 0.5);
+}
+
+.info_box > .user_name> .name{
+    position: relative;
+    width: 153px;
+    height: 54px;
+    line-height: 54px;
+    background-color: rgba(255, 248, 229, 1);
+}
+
+.info_box > .user_name> .name > p{
+    position: relative;
+    padding-left: 8%;
+
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+
+    color: #000000;
+}
+
+.info_box > .user_name> p{
+    position: relative;
+    top: -38px;
+    left: 38%;
+
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+
+    color: #000000;
+}
+
+/* 아이디 */
+
+.info_box > .user_id{
+    width: 511px;
+    height: 54px;
+
+    border-top: 1px solid rgba(118, 118, 118, 0.5);
+}
+
+.info_box > .user_id> .id{
+    position: relative;
+    width: 153px;
+    height: 54px;
+    line-height: 54px;
+    background-color: rgba(255, 248, 229, 1);
+}
+
+.info_box > .user_id> .id > p{
+    position: relative;
+    padding-left: 8%;
+
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+
+    color: #000000;
+}
+
+.info_box > .user_id> p{
+    position: relative;
+    top: -38px;
+    left: 38%;
+
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+
+    color: #000000;
+}
+
+/* 비밀번호 */
+.info_box > .user_pw{
+    width: 511px;
+    height: 54px;
+
+    border-top: 1px solid rgba(118, 118, 118, 0.5);
+}
+
+.info_box > .user_pw> .pw{
+    position: relative;
+    width: 153px;
+    height: 300px;
+    line-height: 54px;
+    background-color: rgba(255, 248, 229, 1);
+}
+
+.info_box > .user_pw > .pw > p{
+    position: relative;
+    padding-left: 8%;
+    top: 125px;
+
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+
+    color: #000000;
+}
+
+
+.user_pw > input[type="text"]{
+    position: relative;
+    width: 170px;
+    height: 27px;
+    top: -280px;
+    left: 38%;
+    margin-bottom: 20px;
+    display: block;
+
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 27px;
+    color: #000000;
+
+    border: 1px solid #c4c4c4;
+    border-radius: 2px;
+}
+
+.info_box > .user_pw > p{
+    position: relative;
+    top: -270px;
+    left: 38%;
+
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 12px;
+
+    color: #000000;
+
+    margin-bottom: 10px;
+}
+
+/* 이메일 */
+.info_box > .user_email{
+    position: relative;
+    width: 511px;
+    height: 54px;
+    top: 240px;
+
+    border-top: 1px solid rgba(118, 118, 118, 0.5);
+}
+
+.info_box > .user_email> .email{
+    position: relative;
+    width: 153px;
+    height: 54px;
+    line-height: 54px;
+    background-color: rgba(255, 248, 229, 1);
+}
+
+.info_box > .user_email> .email > p{
+    position: relative;
+    padding-left: 8%;
+
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+
+    color: #000000;
+}
+
+.info_box > .user_email> p{
+    position: relative;
+    top: -38px;
+    left: 38%;
+
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+
+    color: #000000;
+}
+
+/* 생년월일 */
+
+.info_box > .user_birth{
+    position: relative;
+    width: 511px;
+    height: 54px;
+    top: 240px;
+
+    border-top: 1px solid rgba(118, 118, 118, 0.5);
+}
+
+.info_box > .user_birth> .birth{
+    position: relative;
+    width: 153px;
+    height: 54px;
+    line-height: 54px;
+    background-color: rgba(255, 248, 229, 1);
+}
+
+.info_box > .user_birth> .birth > p{
+    position: relative;
+    padding-left: 8%;
+
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+
+    color: #000000;
+}
+
+.info_box > .user_birth> p{
+    position: relative;
+    display: inline-block;
+    top: -38px;
+    margin-right: 11%;
+    padding-right: 10px;
+
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+
+    color: #000000;
+}
+
+.user_birth> input[type="text"]{
+    position: relative;
+    width: 50px;
+    height: 25px;
+    top: -40px;
+    left: 38%;
+    margin-right: 5%;
+    display: inline-block;
+    text-align: center;
+}
+
+/* 전화번호 */
+
+.info_box > .user_phone{
+    position: relative;
+    width: 511px;
+    height: 54px;
+    top: 240px;
+
+    border-top: 1px solid rgba(118, 118, 118, 0.5);
+    border-bottom: 1px solid rgba(118, 118, 118, 0.5);
+}
+
+.info_box > .user_phone> .phone{
+    position: relative;
+    width: 153px;
+    height: 54px;
+    line-height: 54px;
+    background-color: rgba(255, 248, 229, 1);
+}
+
+.info_box > .user_phone> .phone > p{
+    position: relative;
+    padding-left: 8%;
+
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+
+    color: #000000;
+}
+
+.info_box > .user_phone> p{
+    position: relative;
+    top: -38px;
+    left: 38%;
+
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+
+    color: #000000;
+}
+
+#button1{
+    position: relative;
+    width: 60px;
+    height: 30px;
+
+    top: 420px;
+    left: 32%;
+
+    background-color: #00A19D;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+
+    font-weight: 500;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
