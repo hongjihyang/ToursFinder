@@ -15,7 +15,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js"></script>
     <!-- 폰트어썸 불러오기, 아이콘 사용할려면 꼭 있어야 함 -->
     <script src="https://kit.fontawesome.com/267f4ea7f6.js" crossorigin="anonymous"></script>
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
 
     <link rel="stylesheet" href=".\css\mainpage.css">
     <script src="JS.js" defer></script>
@@ -30,7 +31,7 @@
                 <div class="logo-box cell">
     
                     <div class="logo">
-                        <a href="mainpage.html"><img src=".\img\Logo.png" alt="로고이미지"></a>
+                        <a href="mainpage.html"><img src="img\Logo-img.png" alt="로고이미지" style="width: 175px; height: 191px;"></a>
                     </div>
                 </div>
     
@@ -44,13 +45,11 @@
                         <li class="cell"><a href="Reco.html" class="reco">추천</a></li>
                     </ul>
     
-                    <div class="icon-box cell-r">
-                        <a href="#"><i class="fa-regular fa-heart"></i></a>
-                        <a href="#"><i class="fa-regular fa-bell "></i></a>
-                        <a href="mypage.html"><i class="fa-regular fa-user"></i></a>
-                    </div>
     
                     <div class="login-box cell-r">
+                        <div class="icon-box">
+                            <a href="login.html"><i class="fa-regular fa-user"></i></a>
+                        </div>
                         <a href="login.html" class="login">로그인</a>
                     </div>
                 </div>
@@ -65,112 +64,71 @@
         <div class="surbay">
             <div class="surbay_bar_box con row">
                 <div class="surbay_bar cell">
-                    <h2>당신의 여행 취향을 알려주세요. Tour's Finder에서 여행지를 추천해드립니다.</h1>
-                    <button><a href=".\surbay.html"><p> 설문조사 하러가기</p></a></button>
+                        <img class="surbay_bg" src="img\surbay-bg.png" alt="surbay-backgroun-img" >
+                        
+                        <div class="li_img cell-r">
+                            <img class="li_img" src="img\여행일러스트img.png" alt="surbay_li_img">
+                        </div>
+                        
+                        <div class="text_box">
+                            <section>당신의 여행 취향을 알려주세요</section>
+                            <br>
+                            <p>Tour's Finder</p>
+                            <section class="text-1">에서</section>
+                            <section>여행지를 추천해드립니다 !</section>
+                        </div>
+
+                    <div class="surbay_btn_box cell">
+                        <a href="#">
+                            <p>설문조사 하러가기</p>
+                            <i class="fa-solid fa-arrow-right-long fa-2x cell-r"></i>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
         
 
         <!-- 메인슬라이더 -->
-        <!-- Slider main container -->
-        <div class="swiper">
-            <!-- Additional required wrapper -->
-            <div class="swiper-wrapper con row">
-                <!-- Slides -->
-                <div class="swiper-slide slide1">
-                    <img src=".\img\silder_img1.jpg" alt="">
-                    <div class="text_box">
-                        <h2>곡성 세계장미축제</h2>
-                        <p>전남 곡성군</p>
+           <!-- 지금뜨는 여행지 슬라이더 -->
+           <div class="swiper_box">
+            <div class="swiper-container ">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide slide">
+                        <div class="text_box cell">
+                            <p>지금 뜨는 여행지</p>
+                            <div class="title">
+                                <h1>경주<p>(Gyeongiu)</p></h1>
+                                <p>동궁과 월지</p>
+                            </div>
+                            
+                        </div>
+                        <img src="img\Rectangle 30.png" alt="경주">
                     </div>
-                    <div class="text_box2">
-                        <section>전 세계 명품장미를 한 곳에서 볼 수 있는 국내 유일의 기회!</section>
-                        <section>일정 | 2022.05.21 - 2022.06.06</section>
+                    <div class="swiper-slide slide">
+                        <div class="text_box cell">
+                            <div class="title">
+                                <h1>담양<p>(Damyang)</p></h1>
+                                <p>죽녹원</p>
+                            </div>
+                            
+                        </div>
+                        <img src="img\담양사진.png" alt="담양">
                     </div>
+                    <div class="swiper-slide slide">3</div>
+                    <div class="swiper-slide">4</div>
+                    <div class="swiper-slide">5</div>
+                    <div class="swiper-slide">6</div>
                 </div>
-                <div class="swiper-slide slide2">
-                    <img src=".\img\silder_img2.jpg" alt="">
-                    <div class="text_box">
-                        <h2>창덕궁 달빛기행</h2>
-                        <p>서울 창덕궁</p>
-                    </div>
-                    <div class="text_box2">
-                        <section>은은한 달빛아래 궁궐 곳곳의 숨은 옛이야기와 창덩궁의 야경까지 감상해보세요.</section>
-                        <section>일정 | 2022.05.21 - 2022.06.12</section>
-                    </div>
-                </div>
-                <div class="swiper-slide slide3">
-                    <img src=".\img\silder_img3.jpg" alt="">
-                    <div class="text_box">
-                        <h2>휴애리 봄 수국축제</h2>
-                        <p>제주 서귀포시</p>
-                    </div>
-                    <div class="text_box2">
-                        <section>알록달록한 빛깔로 고운 자태를 뽐내는 수국의 향연을 만끽하세요.</section>
-                        <section>일정 | 2022.03.25 - 2022.05.31</section>
-                    </div>
-                </div>
-                ...
-            </div>
-            <!-- If we need pagination -->
-            <div class="swiper-pagination"></div>
-
-            <!-- If we need navigation buttons -->
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
-
-        </div>
-
-        <!-- 서브슬라이더 -->
-        <div class="subtext con row">
-            지금 뜨는 여행지
-        </div>
-
-        <div class="swiper-container">
-
-            <div class="swiper-wrapper con row">
-                <div class="swiper-slide slider1">
-                    <img src=".\img\sub_slider_img1.png">
-                    <div class="hit">
-                        <p>인기</p>
-                    </div>
-                    <div class="text_box">
-                        <p>경주</p>
-                        <section>동굴와 월지(안압지)</section>
-                    </div>
-
-                </div>
-                <div class="swiper-slide slider2">
-                    <img src=".\img\sub_slider_img2.png">
-                    <div class="text_box">
-                        <p>울릉도</p>
-                    </div>
-                </div>
-                <div class="swiper-slide slider3">
-                    <img src=".\img\sub_slider_img3.png">
-                    <div class="text_box">
-                        <p>여수</p>
-                    </div>
-                </div>
-                <div class="swiper-slide slider4">
-                    <img src=".\img\sub_slider_img4.png">
-                    <div class="text_box">
-                        <p>전주</p>
-                    </div>
-                </div>
-                <div class="swiper-slide slider5">
-                    <img src=".\img\sub_slider_img5.png">
-                    <div class="text_box">
-                        <p>거제도</p>
-                    </div>
-                </div>
-
+                <!-- If we need pagination -->
+                <!-- <div class="swiper-pagination"></div> -->
+                <!-- Add Arrows -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
             </div>
 
-            <!-- 페이징 -->
-            <div class="swiper-pagination"></div>
         </div>
+
 
         <footer class="footer">
 
