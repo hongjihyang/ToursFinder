@@ -14,7 +14,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js"></script>
     <!-- 폰트어썸 불러오기, 아이콘 사용할려면 꼭 있어야 함 -->
     <script src="https://kit.fontawesome.com/267f4ea7f6.js" crossorigin="anonymous"></script>
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
 
     <link rel="stylesheet" href=".\css\tour.css">
     <script src="tour.js" defer></script>
@@ -30,7 +31,8 @@
             <div class="logo-box cell">
 
                 <div class="logo">
-                    <a href="mainpage.html"><img src=".\img\Logo.png" alt="로고이미지"></a>
+                    <a href="mainpage.html"><img src="img\main_Logo_img.png" alt="로고이미지"
+                            style="width: 175px; height: 191px;"></a>
                 </div>
             </div>
 
@@ -41,30 +43,29 @@
 
                     <li class="cell"><a href="tour.html" class="tour">여행지</a></li>
                     <li class="cell"><a href="community.html" class="comm">커뮤니티</a></li>
-                    <li class="cell"><a href="Reco.html" class="reco">추천</a></li>
+                    <li class="cell"><a href="Reco.html" class="reco">축제정보</a></li>
                 </ul>
 
-                <div class="icon-box cell-r">
-                    <a href="#"><i class="fa-regular fa-heart"></i></a>
-                    <a href="#"><i class="fa-regular fa-bell "></i></a>
-                    <a href="mypage.html"><i class="fa-regular fa-user"></i></a>
-                </div>
 
                 <div class="login-box cell-r">
+                    <div class="icon-box">
+                        <a href="login.html"><i class="fa-regular fa-user"></i></a>
+                    </div>
                     <a href="login.html" class="login">로그인</a>
                 </div>
             </div>
-            <div class="topbar-line"></div>
+
         </div>
+
     </div>
+
+
 
 
     <!-- 메인 -->
 
     <div class="main_wrap">
-        <div class="t_text row cell">
-            <h2>가볼만한여행지</h2>
-        </div>
+
 
         <!-- 탭메뉴 -->
         <div class="tab_content con row">
@@ -72,10 +73,13 @@
             <label for="tab01">경기도</label>
             <input type="radio" name="tabmenu" id="tab02">
             <label for="tab02">충청도</label>
+
             <input type="radio" name="tabmenu" id="tab03">
             <label for="tab03">경상도</label>
+
             <input type="radio" name="tabmenu" id="tab04">
             <label for="tab04">전라도</label>
+
             <input type="radio" name="tabmenu" id="tab05">
             <label for="tab05">강원도</label>
 
@@ -83,11 +87,11 @@
                 <ul class="row">
                     <li class="cell">
                         <img src=".\img\tour_img1.png" alt="경기도여행지리스트1">
-                
+
                         <section class="text_box">
                             <p>용인</p>
                         </section>
-        
+
                         <div class="text">
                             <h3>에버랜드</h3><br>
                             <p>꿈과 희망의 나라로 어서오세요!</p>
@@ -98,11 +102,11 @@
 
                     <li class="cell">
                         <img src=".\img\tour_img2.png" alt="경기도여행지리스트2">
-                
+
                         <section class="text_box">
                             <p>서울</p>
                         </section>
-        
+
                         <div class="text">
                             <h3>북촌한옥마을</h3><br>
                             <p>150여채의 한옥이 밀집한 양반촌</p>
@@ -113,11 +117,11 @@
 
                     <li class="cell">
                         <img src=".\img\tour_img3.png" alt="경기도여행지리스트3">
-                
+
                         <section class="text_box">
                             <p>고양</p>
                         </section>
-        
+
                         <div class="text">
                             <h3>중남미문화원</h3><br>
                             <p>지구반대편으로 떠나는 여행</p>
@@ -128,11 +132,11 @@
 
                     <li class="cell">
                         <img src=".\img\tour_img4.jpg" alt="경기도여행지리스트4">
-                
+
                         <section class="text_box">
                             <p>수원</p>
                         </section>
-        
+
                         <div class="text">
                             <h3>수원화성</h3><br>
                             <p>유네스코 세계문화유산으로 등록된 성곽</p>
@@ -143,11 +147,11 @@
 
                     <li class="cell">
                         <img src=".\img\tour_img5.jpg" alt="경기도여행지리스트5">
-                
+
                         <section class="text_box">
                             <p>서울</p>
                         </section>
-        
+
                         <div class="text">
                             <h3>남산타워</h3><br>
                             <p>대한민국 랜드마크 남산서울타워</p>
@@ -158,11 +162,11 @@
 
                     <li class="cell">
                         <img src=".\img\tour-img6.jpg" alt="경기도여행지리스트6">
-                
+
                         <section class="text_box">
                             <p>서울</p>
                         </section>
-        
+
                         <div class="text">
                             <h3>청계천</h3><br>
                             <p>서울특별시 내부에 있는 지방하천</p>
@@ -178,11 +182,11 @@
                 <ul class="row">
                     <li class="cell">
                         <img src=".\img\tour2_img1.png" alt="충청도여행지리스트1">
-                
+
                         <section class="text_box">
                             <p>단양</p>
                         </section>
-        
+
                         <div class="text">
                             <h3>도담삼봉</h3><br>
                             <p>남한강 가운데 세 개의 봉우리로 된 섬</p>
@@ -193,11 +197,11 @@
 
                     <li class="cell">
                         <img src=".\img\tour2_img2.png" alt="충청도여행지리스트2">
-                
+
                         <section class="text_box">
                             <p>태안</p>
                         </section>
-        
+
                         <div class="text">
                             <h3>천리포 수목원</h3><br>
                             <p>바다와 맞닿아있는 수목원</p>
@@ -208,11 +212,11 @@
 
                     <li class="cell">
                         <img src=".\img\tour2_img3.png" alt="충청도여행지리스트3">
-                
+
                         <section class="text_box">
                             <p>아산</p>
                         </section>
-        
+
                         <div class="text">
                             <h3>지중해마을</h3><br>
                             <p>유럽 지중해풍의 이국적 풍경을 체험하다</p>
@@ -223,11 +227,11 @@
 
                     <li class="cell">
                         <img src=".\img\tour2_img4.png" alt="충청도여행지리스트4">
-                
+
                         <section class="text_box">
                             <p>서산</p>
                         </section>
-        
+
                         <div class="text">
                             <h3>해미읍성</h3><br>
                             <p>조선시대에 지어진 읍성중 가장 대표적인 성곽</p>
@@ -238,11 +242,11 @@
 
                     <li class="cell">
                         <img src=".\img\tour2_img5.png" alt="충청도여행지리스트5">
-                
+
                         <section class="text_box">
                             <p>제천</p>
                         </section>
-        
+
                         <div class="text">
                             <h3>청풍호반케이블카</h3><br>
                             <p>전망대에서 보는 청풍호의 절경을 감상하세요</p>
@@ -253,11 +257,11 @@
 
                     <li class="cell">
                         <img src=".\img\tour2_img6.png" alt="충청도여행지리스트6">
-                
+
                         <section class="text_box">
                             <p>대전</p>
                         </section>
-        
+
                         <div class="text">
                             <h3>장태산자연휴양림</h3><br>
                             <p>살아있는 화석 식물 메타세쿼이아 숲</p>
@@ -272,11 +276,11 @@
                 <ul class="row">
                     <li class="cell">
                         <img src=".\img\tour3_img1.png" alt="경상도여행지리스트1">
-                
+
                         <section class="text_box">
                             <p>송도</p>
                         </section>
-        
+
                         <div class="text">
                             <h3>용궁구름다리</h3><br>
                             <p>바다 건너 연결되는 구름다리에서 송도 바다 풍경을 감상하세요</p>
@@ -287,11 +291,11 @@
 
                     <li class="cell">
                         <img src=".\img\tour3_img2.png" alt="경상도여행지리스트2">
-                
+
                         <section class="text_box">
                             <p>부산</p>
                         </section>
-        
+
                         <div class="text">
                             <h3>태종대</h3><br>
                             <p>해안절경이 아름다운 유원지</p>
@@ -302,11 +306,11 @@
 
                     <li class="cell">
                         <img src=".\img\tour3_img3.png" alt="경상도여행지리스트3">
-                
+
                         <section class="text_box">
                             <p>문경</p>
                         </section>
-        
+
                         <div class="text">
                             <h3>문경새재 도립공원</h3><br>
                             <p>역사를 따라 거니는 한국의 아름다운길</p>
@@ -317,11 +321,11 @@
 
                     <li class="cell">
                         <img src=".\img\tour3_img4.png" alt="경상도여행지리스트4">
-                
+
                         <section class="text_box">
                             <p>경주</p>
                         </section>
-        
+
                         <div class="text">
                             <h3>동궁과 월지</h3><br>
                             <p>경주 월성의 별궁 터</p>
@@ -332,11 +336,11 @@
 
                     <li class="cell">
                         <img src=".\img\tour3_img5.png" alt="경상도여행지리스트5">
-                
+
                         <section class="text_box">
                             <p>포항</p>
                         </section>
-        
+
                         <div class="text">
                             <h3>영일대 해수욕장</h3><br>
                             <p>포스코와 영일만이 건너다 보이는 대표적인 해수욕장</p>
@@ -347,11 +351,11 @@
 
                     <li class="cell">
                         <img src=".\img\tour3_img6.png" alt="경상도여행지리스트6">
-                
+
                         <section class="text_box">
                             <p>대구</p>
                         </section>
-        
+
                         <div class="text">
                             <h3>근대골목</h3><br>
                             <p>대구 근대문화의 발자취를 따라 떠나는 골목투어</p>
@@ -366,11 +370,11 @@
                 <ul class="row">
                     <li class="cell">
                         <img src=".\img\tour4_img1.png" alt="전라도여행지리스트1">
-                
+
                         <section class="text_box">
                             <p>남원</p>
                         </section>
-        
+
                         <div class="text">
                             <h3>광한루</h3><br>
                             <p>오작교가 있는 낭만적인 사랑의 다리 </p>
@@ -381,11 +385,11 @@
 
                     <li class="cell">
                         <img src=".\img\tour4_img2.png" alt="전라도여행지리스트2">
-                
+
                         <section class="text_box">
                             <p>완주</p>
                         </section>
-        
+
                         <div class="text">
                             <h3>비비정 예술열차</h3><br>
                             <p>만경강을 가로지르는 폐 철교 위 열차</p>
@@ -396,11 +400,11 @@
 
                     <li class="cell">
                         <img src=".\img\tour4_img3.png" alt="전라도여행지리스트3">
-                
+
                         <section class="text_box">
                             <p>순천</p>
                         </section>
-        
+
                         <div class="text">
                             <h3>순천만 자연생태길</h3><br>
                             <p>희귀 조류와 갈대숲이 가득한 국내 최대 규모의 갈대 군락지</p>
@@ -411,11 +415,11 @@
 
                     <li class="cell">
                         <img src=".\img\tour4_img4.png" alt="전라도여행지리스트4">
-                
+
                         <section class="text_box">
                             <p>군산</p>
                         </section>
-        
+
                         <div class="text">
                             <h3>경암동 철길마을</h3><br>
                             <p>페이퍼 코리아 공장과 군산역을 연결하는 철로 주변의 마을</p>
@@ -426,11 +430,11 @@
 
                     <li class="cell">
                         <img src=".\img\tour4_img5.png" alt="전라도여행지리스트5">
-                
+
                         <section class="text_box">
                             <p>해남</p>
                         </section>
-        
+
                         <div class="text">
                             <h3>도솔암</h3><br>
                             <p>고요한 분위기의 도솔암에 올라 내려다보는 아름다운 경치</p>
@@ -441,11 +445,11 @@
 
                     <li class="cell">
                         <img src=".\img\tour4_img6.png" alt="경상도여행지리스트6">
-                
+
                         <section class="text_box">
                             <p>고창</p>
                         </section>
-        
+
                         <div class="text">
                             <h3>학원농장</h3><br>
                             <p>청보리밭 풍경으로 시기마다 달리하는 꽃을 구경해보세요</p>
@@ -460,11 +464,11 @@
                 <ul class="row">
                     <li class="cell">
                         <img src=".\img\tour5_img1.png" alt="강원도여행지리스트1">
-                
+
                         <section class="text_box">
                             <p>평창</p>
                         </section>
-        
+
                         <div class="text">
                             <h3>대관령 양떼목장</h3><br>
                             <p>한국의 알프스로 불리는 목장의 아름다움을 느껴보세요</p>
@@ -475,11 +479,11 @@
 
                     <li class="cell">
                         <img src=".\img\tour5_img2.png" alt="강원도여행지리스트2">
-                
+
                         <section class="text_box">
                             <p>강릉</p>
                         </section>
-        
+
                         <div class="text">
                             <h3>정동진 바다부채길</h3><br>
                             <p>국내 유일 해안단구로 바다의 푸른 물결과 웅장한 기암괴석</p>
@@ -490,11 +494,11 @@
 
                     <li class="cell">
                         <img src=".\img\tour5_img3.png" alt="강원도여행지리스트3">
-                
+
                         <section class="text_box">
                             <p>고성</p>
                         </section>
-        
+
                         <div class="text">
                             <h3>통일전망대</h3><br>
                             <p>휴전선과 남방한계선이 만나는 해발 70m 고지의 통일전망대</p>
@@ -505,11 +509,11 @@
 
                     <li class="cell">
                         <img src=".\img\tour5_img4.png" alt="강원도여행지리스트4">
-                
+
                         <section class="text_box">
                             <p>평창</p>
                         </section>
-        
+
                         <div class="text">
                             <h3>월정사 전나무숲</h3><br>
                             <p>오대산 자락에 위치하고있는 울창한 전나무 숲</p>
@@ -520,11 +524,11 @@
 
                     <li class="cell">
                         <img src=".\img\tour5_img5.png" alt="강원도여행지리스트5">
-                
+
                         <section class="text_box">
                             <p>속초</p>
                         </section>
-        
+
                         <div class="text">
                             <h3>속초해변</h3><br>
                             <p>해수욕이 아니더라도 잠시 들려 구경하기 좋은 해수욕장</p>
@@ -535,11 +539,11 @@
 
                     <li class="cell">
                         <img src=".\img\tour5_img6.png" alt="강원도여행지리스트6">
-                
+
                         <section class="text_box">
                             <p>양양</p>
                         </section>
-        
+
                         <div class="text">
                             <h3>설악산</h3><br>
                             <p>우리나라 다섯 번째 국립공원</p>

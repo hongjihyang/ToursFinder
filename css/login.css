@@ -414,6 +414,24 @@ input[type="checkbox"] + label{
 
 
 
+.login_main > .login_box > .sub_box > .signup > p{
+
+    position: absolute;
+    width: 90px;
+    height: 20px;
+    top: 420px;
+    left: 38%;
+    text-align: center;
+
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+
+    color: #767676;
+}
+
+
 
 
 

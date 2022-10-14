@@ -14,6 +14,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js"></script>
     <!-- 폰트어썸 불러오기, 아이콘 사용할려면 꼭 있어야 함 -->
     <script src="https://kit.fontawesome.com/267f4ea7f6.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
 
 
     <link rel="stylesheet" href=".\css\surbay.css">
@@ -22,46 +24,46 @@
 </head>
 
 <body>
-    <!-- 상단바 -->
-    <div class="top-bar-wrap">
+<!-- 상단바 -->
+<div class="top-bar-wrap">
 
-        <div class="top-bar con row">
+    <div class="top-bar con row">
 
-            <div class="logo-box cell">
+        <div class="logo-box cell">
 
-                <div class="logo">
-                    <a href="mainpage.html"><img src=".\img\Logo.png" alt="로고이미지"></a>
-                </div>
+            <div class="logo">
+                <a href="mainpage.html"><img src="img\main_Logo_img.png" alt="로고이미지" style="width: 175px; height: 191px;"></a>
             </div>
+        </div>
 
-            <!-- 메뉴 -->
-            <div class="menu-box cell">
+        <!-- 메뉴 -->
+        <div class="menu-box cell">
 
-                <ul class="nav-box row">
+            <ul class="nav-box row">
 
-                    <li class="cell"><a href="tour.html" class="tour">여행지</a></li>
-                    <li class="cell"><a href="community.html" class="comm">커뮤니티</a></li>
-                    <li class="cell"><a href="Reco.html" class="reco">추천</a></li>
-                </ul>
+                <li class="cell"><a href="tour.html" class="tour">여행지</a></li>
+                <li class="cell"><a href="community.html" class="comm">커뮤니티</a></li>
+                <li class="cell"><a href="Reco.html" class="reco">축제정보</a></li>
+            </ul>
 
-                <div class="icon-box cell-r">
-                    <a href="#"><i class="fa-regular fa-heart"></i></a>
-                    <a href="#"><i class="fa-regular fa-bell "></i></a>
-                    <a href="mypage.html"><i class="fa-regular fa-user"></i></a>
+
+            <div class="login-box cell-r">
+                <div class="icon-box">
+                    <a href="login.html"><i class="fa-regular fa-user"></i></a>
                 </div>
-
-                <div class="login-box cell-r">
-                    <a href="login.html" class="login">로그인</a>
-                </div>
+                <a href="login.html" class="login">로그인</a>
             </div>
-
-            <div class="topbar-line"></div>
         </div>
 
     </div>
 
+</div>
+
+
+
+    <!-- 설문조사내용 -->
     <div class="surbay_title con row">
-        <h2>여행지 설문 조사</h2>
+        <section class="title">여행지 설문 조사</section>
         <p> 자신의 여행 취향에 알맞은 질문에 체크를 해주세요!</p>
     </div>
 

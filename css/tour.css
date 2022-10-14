@@ -1,7 +1,7 @@
 body {
-    font-family: 'MinSans-Medium';
-    overflow-x:hidden; 
-    overflow-y: scroll;
+    font-family: 'IBMPlexSansKR-Regular';
+    overflow-x: auto; 
+    overflow-y: auto;
 }
 
 /* 노멀라이징 */
@@ -51,28 +51,25 @@ a {
 
 /* 폰트 */
 @font-face {
-    font-family: 'Happiness-Sans-Bold';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2205@1.0/Happiness-Sans-Bold.woff2') format('woff2');
-
-}
-
-@font-face {
-    font-family: 'MinSans-Medium';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/MinSans-Medium.woff') format('woff');
+    font-family: 'ImcreSoojin';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.3/ImcreSoojin.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'InfinitySans-RegularA1';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/InfinitySans-RegularA1.woff') format('woff');
+    font-family: 'IBMPlexSansKR-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/IBMPlexSansKR-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
- 
-메인
+
+
+
+/* 메인 */
 .Main_Home{
-    width: 1920px;
+    width: 1410px;
+    height: auto;
 } 
 
 
@@ -82,34 +79,33 @@ a {
 
 .top-bar-wrap {
     width: 100%;
+    background-color: #0e6ac7;
 }
 
 .top-bar-wrap>.top-bar {
-    height: 105px;
+    height: 191px;
 }
 
 
-.top-bar-wrap>.top-bar>.logo-box {
-    width: 167px;
-    height: 115px;
+.top-bar-wrap>.top-bar>.logo-box > .logo {
+    width: 170px;
+    height: 180px;
 }
-
-
 
 .top-bar-wrap>.top-bar>.menu-box {
     width: 700px;
-    height: 115px;
-    font-size: 18px;
+    height: 191px;
+    font-size: 22px;
     position: relative;
     line-height: 25px;
-    color: #000000;
+    color: #ffffff;
 }
 
 
 .top-bar-wrap>.top-bar>.menu-box>ul {
     position: absolute;
-    left: 200px;
-    top: 20px;
+    left: 70px;
+    top: 40px;
     z-index: 1000;
 }
 
@@ -117,12 +113,12 @@ a {
     position: relative;
     display: inline-block;
     margin-left: 50px;
-    margin-right: 60px;
+    margin-right: 40px;
     line-height: 115px;
 }
 
 .nav-box>li:hover {
-    color: #00A19D;
+    color: #ffffff;
 }
 
 .menu-box>ul>.line {
@@ -137,7 +133,7 @@ a {
 
 .top-bar>.menu-box>ul>li:hover {
     font-weight: 600;
-    color: #00A19D;
+    color: #ffffff;
 }
 
 .top-bar>.menu-box>ul>li::after {
@@ -145,7 +141,7 @@ a {
     content: "";
     width: 0;
     height: 2px;
-    background-color: #00A19D;
+    background-color: #ffffff;
     transition: 0.5s;
     font-weight: 600;
 }
@@ -155,62 +151,35 @@ a {
 }
 
 
-/* 아이콘 */
-
-.top-bar-wrap>.top-bar>.menu-box>.icon-box {
-    position: absolute;
-    width: 230px;
-    height: 115px;
-    top: 65px;
-    right: -70%;
-    transform: translateX(-70%);
-}
-
-.top-bar-wrap>.top-bar>.menu-box>.icon-box>a {
-    margin-left: 25px;
-}
-
-.top-bar-wrap>.top-bar>.menu-box>.icon-box>a:hover {
-    color: #E05D5D;
-}
 
 /* 로그인 */
-.login {
+.login-box {
     position: absolute;
-    width: 52px;
-    height: 21px;
-    top: 66px;
-    right: -48%;
+    width: 70px;
+    height: 191px;
+    right: -46%;
     transform: translateX(-48%);
-
     display: inline-block;
+    color: #ffffff;
 
-    font-family: 'InfinitySans-RegularA1';
+}
+
+.login-box > .icon-box{
+    padding-top: 70px;
+    padding-left: 12px;
+}
+
+.login-box > .login{
     font-style: normal;
     font-weight: 300;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 21px;
-    /* identical to box height */
-
-
-    color: #000000;
 }
 
-.login:hover {
-    color: #E05D5D;
+.menu-box > .nav-box > .cell > .tour{
     font-weight: 600;
+    font-size: 22px;
 }
-
-
-
-.topbar-line {
-    position: absolute;
-    width: 100%;
-    top: 150px;
-    left: -10px;
-    border: 0.5px solid #c4c4c4;
-}
-
 
 /* 메인 */
 
@@ -218,25 +187,40 @@ a {
 .t_text {
     position: relative;
     top: 115px;
-    left: -865px;
+    left: 865px;
+
 }
 
 
 input[type="radio"]{
     display: none;
+
 }
+
+
 input[type="radio"] + label{
+
     display: inline-block;
-    padding: 10px 50px;
-    background-color: #fff;
-    color: #000000;
-    font-size: 14px;
+    padding: 10px 30px;
+    background-color: 3fff;
+    color: #0e6ac7;
+    font-size: 17px;
     cursor: pointer;
-    border: 1px solid #aaa;
+
+    border-right: 1px solid #ddd;
+
+
 }
+
+
+
 input[type="radio"]:checked +label{
-    background-color: #00A19D;
-    color: #fff;
+    color: #0e6ac7;
+
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 32px;
 
 }
 
