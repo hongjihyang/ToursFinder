@@ -184,16 +184,12 @@ a {
 /* 메인 */
 
 
-.t_text {
-    position: relative;
-    top: 115px;
-    left: 865px;
 
-}
 
 
 input[type="radio"]{
     display: none;
+
 
 }
 
@@ -226,9 +222,10 @@ input[type="radio"]:checked +label{
 
 .conbox{
     position: absolute;
-    width: 1230px;
+    width: 1140px;
     height: 1050px;
     top: 110px;
+    left: 20px;
     background: #fff;
     margin: 0 auto;
     display: none;
@@ -267,20 +264,34 @@ input[id="tab05"]:checked ~ .c5{
     height: 100%;
 }
 
+.conbox{
+    border: 1px solid gold;
+}
+
 .conbox > ul> li{
     margin-bottom: 70px;
+    width: 263px;
+    height: 371px;
+
+    margin-right: 22px;
+
+    border: 1px solid blue;
 }
 
 .conbox > ul> li> img{
-    width: 390px;
-    height: 280px;
-    padding-right: 20px;
+    width: 260px;
+    height: 180px;
     cursor: pointer;
+
+
 }
 
+.conbox> ul> li >.text{
+    border: 1px solid red;
+}
 
-
-.conbox> ul> li >.text>p {
+.conbox> ul> li >.text > p {
+    cursor: pointer;
     margin-top: 8px;
 
     font-size: 15px;
