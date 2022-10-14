@@ -29,7 +29,7 @@
             <div class="logo-box cell">
 
                 <div class="logo">
-                    <a href="mainpage.html"><img src=".\img\Logo.png" alt="로고이미지"></a>
+                    <a href="MainPage.html"><img src="img\main_Logo_img.png" alt="로고이미지" style="width: 175px; height: 191px;"></a>
                 </div>
             </div>
 
@@ -40,69 +40,71 @@
 
                     <li class="cell"><a href="tour.html" class="tour">여행지</a></li>
                     <li class="cell"><a href="community.html" class="comm">커뮤니티</a></li>
-                    <li class="cell"><a href="Reco.html" class="reco">추천</a></li>
+                    <li class="cell"><a href="Reco.html" class="reco">축제정보</a></li>
                 </ul>
 
-                <div class="icon-box cell-r">
-                    <a href="#"><i class="fa-regular fa-heart"></i></a>
-                    <a href="#"><i class="fa-regular fa-bell "></i></a>
-                    <a href="mypage.html"><i class="fa-regular fa-user"></i></a>
-                </div>
 
                 <div class="login-box cell-r">
+                    <div class="icon-box">
+                        <a href="login.html"><i class="fa-regular fa-user"></i></a>
+                    </div>
                     <a href="login.html" class="login">로그인</a>
                 </div>
             </div>
 
-            <div class="topbar-line"></div>
         </div>
 
     </div>
+
+
     <!-- 로그인메인  -->
     <div class="login_main">
-        <div class="login_text">로그인</div>
-        <div class="login_box">
-            <input id="id" type="text" placeholder="아이디를 입력하세요">
-            <input id="password" type="text" placeholder="비밀번호를 입력하세요">
 
-
-            <input type="checkbox" class="login_chbox">
-            <label for="login_chbox" id="label">로그인 상태 유지</label>
-
-            <a href="#" class="lost">
-                <p>아이디/비밀번호찾기</p>
-            </a>
-
-            <a href="#" id="btn">
-                <p>로그인</p>
-            </a>
-
-            <div class="text1">
-                <p>SNS로 로그인하기</p>
+        <div class="login_box con row">
+            <div class="title con">
+                <p>Tour's Finder</p>
             </div>
 
-            <a href="#" class="naver">
-                <img src=".\img\naver.png" alt="">
-            </a>
+            <div class="sub_box">
+                <input id="id" type="text" placeholder="아이디">
+                <input id="password" type="text" placeholder="비밀번호">
+    
+                <input type="checkbox" class="login_chbox">
+                <label for="login_chbox" id="label">로그인 상태유지</label>
+    
+                <a href="#" id="btn">
+                    <p>로그인</p>
+                </a>
 
-            <a href="#" class="kakao">
-                <img src=".\img\kakao.png" alt="">
-            </a>
+                <a href="#" class="fount_idpw">
+                    <p>아이디/비밀번호</p>
+                </a>
 
-            <a href="#" class="google">
-                <img src=".\img\google.png" alt="">
-            </a>
+                <div class="line">
+                    <div></div>
+                </div>
+    
+                <a href="#" class="naver">
+                    <img src="img\login_naver.png" alt="네이버간편로그인" 
+                         style="position: absolute; width: 35px; height: 35px; top: 3px; left: 28px; ">
+                    <p>네이버 로그인</p>
+                </a>
+    
+                <a href="#" class="kakao">
+                    <img src="img\login_kakao.png" alt="카카오간편로그인" 
+                    style="position: absolute; width: 35px; height: 35px; top: 3px; left: 28px; ">
+                    <p>카카로 로그인</p>
+                </a>
+    
+                <a href="#" class="signup">
+                    <!-- <p>회원가입하기</p> -->
+                </a>
+            </div>
 
-            <a href="#" class="apple">
-                <img src=".\img\apple.png" alt="">
-            </a>
-
-            <a href="#" class="signup">
-                <p>회원가입하기</p>
-            </a>
-
+            </div>
         </div>
-    </div>
+
+
 
     <footer class="footer">
         

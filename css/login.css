@@ -1,7 +1,7 @@
 body {
-    font-family: 'MinSans-Medium';
-    overflow-x:hidden; 
-    overflow-y: scroll;
+    font-family: 'IBMPlexSansKR-Regular';
+    overflow-x: auto; 
+    overflow-y: auto;
 }
 
 /* 노멀라이징 */
@@ -49,447 +49,374 @@ a {
 
 /* 폰트 */
 @font-face {
-    font-family: 'Happiness-Sans-Bold';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2205@1.0/Happiness-Sans-Bold.woff2') format('woff2');
-
-}
-@font-face {
-    font-family: 'MinSans-Medium';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/MinSans-Medium.woff') format('woff');
+    font-family: 'ImcreSoojin';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.3/ImcreSoojin.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'InfinitySans-RegularA1';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/InfinitySans-RegularA1.woff') format('woff');
+    font-family: 'IBMPlexSansKR-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/IBMPlexSansKR-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'ImcreSoojin';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.3/ImcreSoojin.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 
+/* 메인 */
+.Main_Home {
+    width: 1410px;
+    height: auto;
+}
 
 /* 탑바 */
 
 
 .top-bar-wrap {
     width: 100%;
+    background-color: #0e6ac7;
 }
 
 .top-bar-wrap>.top-bar {
-    height: 105px;
+    height: 191px;
 }
 
 
-.top-bar-wrap>.top-bar>.logo-box {
-    width: 167px;
-    height: 115px;
-}
-
-.top-bar-wrap>.top-bar>.logo-box>.logo {
-    line-height: 134px;
+.top-bar-wrap>.top-bar>.logo-box > .logo {
+    width: 170px;
+    height: 180px;
 }
 
 .top-bar-wrap>.top-bar>.menu-box {
     width: 700px;
-    height: 115px;
-    font-size: 18px;
+    height: 191px;
+    font-size: 22px;
     position: relative;
     line-height: 25px;
-    color: #000000;
+    color: #ffffff;
 }
 
 
 .top-bar-wrap>.top-bar>.menu-box>ul {
     position: absolute;
-    left: 200px;
-    top: 20px;
+    left: 70px;
+    top: 40px;
     z-index: 1000;
 }
 
-.top-bar-wrap > .top-bar > .menu-box > ul > li {
+.top-bar-wrap>.top-bar>.menu-box>ul>li {
     position: relative;
     display: inline-block;
     margin-left: 50px;
-    margin-right: 60px;
+    margin-right: 40px;
     line-height: 115px;
 }
 
-.nav-box > li:hover{
-    color: #00A19D;
+.nav-box>li:hover {
+    color: #ffffff;
 }
 
-.menu-box > ul> .line{
+.menu-box>ul>.line {
     position: relative;
     margin-top: 5%;
     border: 0.5px solid #b5b5b5;
 }
 
-.top-bar > .menu-box > ul:hover{
+.top-bar>.menu-box>ul:hover {
     color: #ddd;
 }
 
-.top-bar > .menu-box > ul > li:hover{
+.top-bar>.menu-box>ul>li:hover {
     font-weight: 600;
-    color: #00A19D;
+    color: #ffffff;
 }
 
-.top-bar > .menu-box > ul > li::after{
+.top-bar>.menu-box>ul>li::after {
     display: block;
-	content: "";
-	width: 0;
-	height: 2px;
-	background-color: #00A19D;
-	transition: 0.5s;
-	font-weight: 600;
+    content: "";
+    width: 0;
+    height: 2px;
+    background-color: #ffffff;
+    transition: 0.5s;
+    font-weight: 600;
 }
 
-.top_bar> .manu-box > ul > li:hover::after{
+.top_bar>.manu-box>ul>li:hover::after {
     width: 100%;
 }
 
-/* 아이콘 */
 
-.top-bar-wrap>.top-bar > .menu-box >.icon-box {
-    position: absolute;
-    width: 230px;
-    height: 115px;
-    top: 65px;
-    right: -70%;
-    transform: translateX(-70%);
-}
 
-.top-bar-wrap>.top-bar > .menu-box >.icon-box > a{
-    margin-left: 25px;
-}
-
-.top-bar-wrap>.top-bar > .menu-box >.icon-box > a:hover{
-    color: #E05D5D;
-}
 
 /* 로그인 */
-.login {
+.login-box {
     position: absolute;
-    width: 52px;
-    height: 21px;
-    top: 66px;
-    right: -48%;
+    width: 70px;
+    height: 191px;
+    right: -46%;
     transform: translateX(-48%);
-
     display: inline-block;
+    color: #ffffff;
 
-    font-family: 'InfinitySans-RegularA1';
+}
+
+.login-box > .icon-box{
+    padding-top: 70px;
+    padding-left: 12px;   
+
+
+  }
+
+.login-box > .login{
     font-style: normal;
     font-weight: 300;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 21px;
-    /* identical to box height */
-
-
-    color: #000000;
 }
 
-.login:hover {
-    color: #E05D5D;
-    font-weight: 600;
-}
-
-
-
-.topbar-line {
-    position: absolute;
-    width: 100%;
-    top: 150px;
-    left: -10px;
-    border: 0.5px solid #c4c4c4;
-}
 
 
 /* 로그인메인화면 */
 
 .login_main{
-    position: relative;
     width: 100%;
-    height: 1000px;
-    left: 0;
-    top: 48px;
-
-    background: rgba(255, 248, 229, 0.45);
+    height: 900px;
+    left: 0px;
+    top: 0px;
 }
 
-.login_main > .login_text{
-    position: absolute;
-    width: 85px;
-    height: 40px;
-    left:950px;
-    top: 100px;
+.login_main > .login_box > .title{
+    position: relative;
+    width: 401px;
+    height: 46px;
+    left: 0px;
 
     text-align: center;
+}
 
-    font-family: 'InfinitySans-RegularA1';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 28px;
-    line-height: 38px;
-    letter-spacing: 0.1em;
+.login_main > .login_box > .title > p{
+    display: inline-block;
+    width: 300px;
+    height: 46px;
+    text-align: center;
 
-    color: #000000;
+    font-weight: 400;
+    font-family: 'ImcreSoojin';
+    font-size: 40px;
+    line-height: 46px;
+
+    color: #0e6ac7;
+
 
 }
 
-/* 로그인박스 */
+
 .login_main > .login_box{
-    position: absolute;
-    width: 525px;
-    height: 670px;
-    left: 732px;
-    top: 173px;
+    position: relative;
+    width: 401px;
+    height: 511px;
+    left: 90px;
+    top: 100px;
 
-    background-color: #ffffff;
 }
 
-.login_main > .login_box > #id{
-    position: absolute;
+.login_main > .login_box > .sub_box{
+    position: relative;
+    width: 401px;
+    height: 421px;
+    top: 40px;
+
+    /* border: 1px solid blue; */
+}
+
+.login_main > .login_box > .sub_box > #id{
+    position: relative;
     width: 400px;
     height: 56px;
-    left: 12%;
-    top: 90px;
+    left: -1.5px;
 
     background-color: #ffffff;
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    border-bottom: 1px solid #dbdbdb;
-    transform: matrix(1, 0, 0, -1, 0, 0,);
-
-
+    border: 1px solid #ddd;
+    
     font-style: normal;
+    font-weight: 500;
     font-size: 18px;
     line-height: 25px;
-    font-family: 'MinSans-Medium';
-    font-weight: 500;
+
+    color: #767676;
 }
 
-
-.login_main > .login_box > #password{
-    position: absolute;
+.login_main > .login_box > .sub_box > #password{
+    position: relative;
     width: 400px;
     height: 56px;
-    left: 12%;
-    top: 180px;
+    left: -1.5px;
+    top: 20px;
 
     background-color: #ffffff;
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    border-bottom: 1px solid #dbdbdb;
-    transform: matrix(1, 0, 0, -1, 0, 0,);
-
-
+    border: 1px solid #ddd;
+    
     font-style: normal;
+    font-weight: 500;
     font-size: 18px;
     line-height: 25px;
-    font-family: 'MinSans-Medium';
-    font-weight: 500;
+
+    color: #767676;
 }
 
 
-.login_main > .login_box > .login_chbox{
+.login_main > .login_box > .sub_box > #btn{
+    position: absolute;
+    width: 400px;
+    height: 60px;
+    top: 160px;
+    align-items: center;
+    left: 0px;
+
+    background-color: #0e6ac7;
+    border-radius: 30px;
+
+}
+
+.login_main > .login_box > .sub_box > #btn > p{
+    position: absolute;
+
+    width: 50px;
+    height: 25px;
+    left: 170px;
+    top: 12.5px;
+
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25px;
+
+    color: #ffffff;
+}
+
+
+.login_main > .login_box > .sub_box > .login_chbox{
     box-sizing: border-box;
 
-    position: absolute;
+    position: relative;
+
     width: 22px;
     height: 22px;
-    left: 12%;
-    top: 260px;
+    top: 120px;
+
+    border-radius: 70%;
 
     background-color: #ffffff;
-    border-radius: 70%;
-    border: 1px solid #dbdbdb;
 }
+
 
 input[type="checkbox"] + label{
     position: relative;
     width: 105px;
     height: 20px;
-    top: 255px;
-    left: 18%;
+    top: 115px;
 
-    font-size: 15px;
     font-style: normal;
     font-weight: 500;
-    line-height: 20px;
-
-    color: #767676;
-}
-
-.login_main > .login_box > .lost{
-    position: absolute;
-    width: 150px;
-    height: 20px;
-    right: 40px;
-    top: 260px;
-
-    font-style: normal;
     font-size: 15px;
-    font-weight: 300px;
     line-height: 20px;
-    font-family: 'MinSans-Medium';
+
+    color: #767676;
+
+}
+
+.login_main > .login_box > .sub_box > .fount_idpw{
+    position: absolute;
+    width: 103px;
+    height: 20px;
+    top: 240px;
+    right: 0px;
+
+
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
 
     color: #767676;
 }
 
-.login_main > .login_box > #btn{
-    position: absolute;
+.login_main > .login_box > .sub_box > .line{
+    position: relative;
     width: 400px;
-    height: 56px;
-    left: 12%;
-    top: 340px;
+    height: 0px;
+    top: 140px;
 
-    background-color: #00A19D;
+    border: 1px solid #ddd;
 }
 
- .login_main > .login_box > #btn > p{
+.login_main > .login_box > .sub_box > .naver{
     position: absolute;
-    width: 70px;
-    height: 25px;
-    left: 175px;
-    top: 15px;
+    width: 197px;
+    height: 40px;
 
-    font-family: 'MinSans-Medium';
+    top: 320px;
+
+    background-color: #34ae37;
+    border-radius: 25.5px;
+    
+}
+
+
+.login_main > .login_box > .sub_box > .naver > p{
+    position: absolute;
+    width: 80px;
+    height: 13px;
+    top: 13px;
+    left: 70px;
     font-style: normal;
-    font-weight: 200;
-    font-size: 20px;
-    line-height: 25px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
 
     color: #ffffff;
+}
 
+.login_main > .login_box > .sub_box > .kakao{
+    position: absolute;
+    width: 197px;
+    height: 40px;
+
+    right: 0px;
+    top: 320px;
+
+    background-color: #ffe617;
+    border-radius: 25.5px;
+    
 }
 
 
-.login_main > .login_box > .text1{
+.login_main > .login_box > .sub_box > .kakao > p{
     position: absolute;
-    width: 115px;
-    height: 20px;
-    left: 210px;
-    top: 440px;
-
-    font-family: 'MinSans-Medium';
-    font-style: normal;
-    font-weight: 200;
-    font-size: 15px;
-    line-height: 20px;
-
-    color: #767676;
-}
-
-.login_main > .login_box > .naver{
-    box-sizing: border-box;
-
-    position: absolute;
-    width: 48px;
-    height: 48px;
-    left: 130px;
-    top: 490px;
-
-    border-radius: 70%;
-    border: 1px solid #767676;
-}
-
-.login_main > .login_box > .naver > img{
-    position: absolute;
-    width: 30px;
-    height: 30px;
-    left: 8px;
-    top: 8px;
-
-
-}
-
-.login_main > .login_box > .kakao{
-    box-sizing: border-box;
-
-    position: absolute;
-    width: 48px;
-    height: 48px;
-    left: 200px;
-    top: 490px;
-
-    border-radius: 70%;
-    border: 1px solid #767676;
-}
-
-.login_main > .login_box > .kakao > img{
-    position: absolute;
-    width: 25px;
-    height: 25px;
-    left: 11px;
-    top: 11px;
-
-
-}
-
-.login_main > .login_box > .google{
-    box-sizing: border-box;
-
-    position: absolute;
-    width: 48px;
-    height: 48px;
-    left: 270px;
-    top: 490px;
-
-    border-radius: 70%;
-    border: 1px solid #767676;
-}
-
-.login_main > .login_box > .google > img{
-    position: absolute;
-    width: 25px;
-    height: 25px;
-    left: 10.5px;
-    top: 10.5px;
-
-
-}
-
-.login_main > .login_box > .apple{
-    box-sizing: border-box;
-
-    position: absolute;
-    width: 48px;
-    height: 48px;
-    left: 340px;
-    top: 490px;
-
-    border-radius: 70%;
-    border: 1px solid #767676;
-}
-
-.login_main > .login_box > .apple > img{
-    position: absolute;
-    width: 25px;
-    height: 25px;
-    left: 10px;
-    top: 10px;
-
-
-}
-
-.login_main > .login_box > .signup{
-    position: absolute;
-    width: 130px;
-    height: 20px;
-    left: 220px;
-    top: 610px;
-
-    font-family: 'MinSans-Medium';
+    width: 80px;
+    height: 13px;
+    top: 13px;
+    right: 50px;
     font-style: normal;
     font-weight: 500;
-    font-size: 18px;
-    line-height: 20px;
+    font-size: 14px;
+    line-height: 16px;
 
-    color: #767676;
+    color: #47292b;
 }
+
+
+
+
+
+
+
 
 
 
