@@ -179,9 +179,7 @@ a {
     position: relative;
     width: 700px;
     height: 1000px;
-
-    top: 150px;
-
+    top: 100px;
 }
 
 .wrapper > .title > h1{

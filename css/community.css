@@ -1,7 +1,7 @@
 body {
-    font-family: 'MinSans-Medium';
-    overflow-x:hidden; 
-    overflow-y: scroll;
+    font-family: 'IBMPlexSansKR-Regular';
+    overflow-x: auto; 
+    overflow-y: auto;
 }
 
 
@@ -50,28 +50,23 @@ a {
 
 /* 폰트 */
 @font-face {
-    font-family: 'Happiness-Sans-Bold';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2205@1.0/Happiness-Sans-Bold.woff2') format('woff2');
-
-}
-@font-face {
-    font-family: 'MinSans-Medium';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/MinSans-Medium.woff') format('woff');
+    font-family: 'ImcreSoojin';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.3/ImcreSoojin.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'InfinitySans-RegularA1';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/InfinitySans-RegularA1.woff') format('woff');
+    font-family: 'IBMPlexSansKR-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/IBMPlexSansKR-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
-
 
 /* 메인 */
 .Main_Home{
-    width: 1920px;
+    width: 1410px;
+    height: auto;
 }
 
 
@@ -81,171 +76,193 @@ a {
 
 .top-bar-wrap {
     width: 100%;
+    background-color: #0e6ac7;
 }
 
 .top-bar-wrap>.top-bar {
-    height: 105px;
+    height: 191px;
 }
 
 
-.top-bar-wrap>.top-bar>.logo-box {
-    width: 167px;
-    height: 115px;
-}
-
-.top-bar-wrap>.top-bar>.logo-box>.logo {
-    line-height: 134px;
+.top-bar-wrap>.top-bar>.logo-box > .logo {
+    width: 170px;
+    height: 180px;
 }
 
 .top-bar-wrap>.top-bar>.menu-box {
     width: 700px;
-    height: 115px;
-    font-size: 18px;
+    height: 191px;
+    font-size: 22px;
     position: relative;
     line-height: 25px;
-    color: #000000;
+    color: #ffffff;
 }
 
 
 .top-bar-wrap>.top-bar>.menu-box>ul {
     position: absolute;
-    left: 200px;
-    top: 20px;
+    left: 70px;
+    top: 40px;
     z-index: 1000;
 }
 
-.top-bar-wrap > .top-bar > .menu-box > ul > li {
+.top-bar-wrap>.top-bar>.menu-box>ul>li {
     position: relative;
     display: inline-block;
     margin-left: 50px;
-    margin-right: 60px;
+    margin-right: 40px;
     line-height: 115px;
 }
 
-.nav-box > li:hover{
-    color: #00A19D;
+.nav-box>li:hover {
+    color: #ffffff;
 }
 
-.menu-box > ul> .line{
+.menu-box>ul>.line {
     position: relative;
     margin-top: 5%;
     border: 0.5px solid #b5b5b5;
 }
 
-.top-bar > .menu-box > ul:hover{
+.top-bar>.menu-box>ul:hover {
     color: #ddd;
 }
 
-.top-bar > .menu-box > ul > li:hover{
+.top-bar>.menu-box>ul>li:hover {
     font-weight: 600;
-    color: #00A19D;
+    color: #ffffff;
 }
 
-.top-bar > .menu-box > ul > li::after{
+.top-bar>.menu-box>ul>li::after {
     display: block;
-	content: "";
-	width: 0;
-	height: 2px;
-	background-color: #00A19D;
-	transition: 0.5s;
-	font-weight: 600;
+    content: "";
+    width: 0;
+    height: 2px;
+    background-color: #ffffff;
+    transition: 0.5s;
+    font-weight: 600;
 }
 
-.top_bar> .manu-box > ul > li:hover::after{
+.top_bar>.manu-box>ul>li:hover::after {
     width: 100%;
 }
 
-/* 아이콘 */
 
-.top-bar-wrap>.top-bar > .menu-box >.icon-box {
-    position: absolute;
-    width: 230px;
-    height: 115px;
-    top: 65px;
-    right: -70%;
-    transform: translateX(-70%);
-}
-
-.top-bar-wrap>.top-bar > .menu-box >.icon-box > a{
-    margin-left: 25px;
-}
-
-.top-bar-wrap>.top-bar > .menu-box >.icon-box > a:hover{
-    color: #E05D5D;
-}
 
 /* 로그인 */
-.login {
+.login-box {
     position: absolute;
-    width: 52px;
-    height: 21px;
-    top: 66px;
-    right: -48%;
+    width: 70px;
+    height: 191px;
+    right: -46%;
     transform: translateX(-48%);
-
     display: inline-block;
+    color: #ffffff;
 
-    font-family: 'InfinitySans-RegularA1';
+}
+
+.login-box > .icon-box{
+    padding-top: 70px;
+    padding-left: 12px;
+}
+
+.login-box > .login{
     font-style: normal;
     font-weight: 300;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 21px;
-    /* identical to box height */
-
-
-    color: #000000;
 }
 
-.login:hover {
-    color: #E05D5D;
+.menu-box > .nav-box > .cell > .comm{
     font-weight: 600;
-}
-
-
-
-.topbar-line {
-    position: absolute;
-    width: 100%;
-    top: 150px;
-    left: -10px;
-    border: 0.5px solid #c4c4c4;
+    font-size: 22px;
 }
 
 
 /* 메인 */
-.Sidebar {
+.Free_Main {
     position: relative;
-    width: 190px;
-    height: 350px;
-}
-
-.Sidebar > .side{
-    position: relative;
-    left: -220%;
+    width: 1130px;
+    height: 1000px;
     top: 100px;
+    left: 0;
 }
 
-.Sidebar > .side >.line1{
+.Sidebar > .title{
     position: relative;
-    top: 15px;
-    width: 150px;
-    border: 1px solid #767676;
-    left: -12%;
+    width: 200px;
+    height: 136px;
+    background-color: #0e6ac7;
 }
 
-.Sidebar > .side > .sb{
+.Sidebar > .title > p{
     position: relative;
+    text-align: center;
     top: 50px;
+    
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 42px;
+
+    color: #ffffff;
+
 }
 
-.Sidebar > .side > .sb > li{
-    margin-top: 50px;
-    font-size: 18px;
+
+.Sidebar > .sb{
+    border: 3px solid #0e6ac7;
+
+    position: relative;
+    box-sizing: border-box;
+    width: 200px;
+    height: 291px;
+
+    background-color: #ffffff;
+
+}
+
+.Sidebar >.sb > li{
+    border-top: 1px solid #767676;
+    text-align: center;
+
+    padding: 31px;
+
+    font-size: 20px;
     font-weight: 500;
     font-style: normal;
-    line-height: 18px;
-    color: #767676;
+    line-height: 32px;
+    color: #3e3d3b;
 }
+
+.main_box{
+    position: relative;
+    border: 1px solid red;
+
+    width: 900px;
+    height: 1000px;
+    top: -42.8%;
+
+    left: 10.1%;
+}
+
+.main_box > .title{
+    position: relative;
+    width: 150px;
+    height: 49px;
+    top: 40px;
+    left: 5%;
+    border: 1px solid blue;
+}
+
+.main_box > .title > p{
+    text-align: center;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 49px;
+}
+
 
 
 
