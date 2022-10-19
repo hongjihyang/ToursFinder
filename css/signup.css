@@ -176,8 +176,11 @@ a {
 /* 회원가입 */
 
 .wrapper{
+    position: relative;
     width: 700px;
     height: 1000px;
+
+    top: 150px;
 
 }
 
@@ -185,11 +188,10 @@ a {
     position: relative;
     width: 170px;
     height: 45px;
-    top: 60px;
-    left: 32%;
-    
+    left: 40%;
+    padding-bottom: 7%;
 
-    font-size: 45px;
+    font-size: 40px;
     font-weight: 400;
     font-style: normal;
     font-family: 'ImcreSoojin';
@@ -320,6 +322,8 @@ div {
     width: 276px;
     height: 49px;
     right: 14%;
+
+    color: #ffffff;
 }
 
 #timeLimit{
@@ -344,6 +348,8 @@ div {
     width: 276px;
     height: 49px;
     right: 14%;
+
+    color: #ffffff;
 }
 
 .area{
@@ -363,25 +369,34 @@ div {
     position: relative;
     text-align: center;
 
+    width: 457px;
+    height: 49px;
+    left: 20%;
+
 }
 
-.gender select{
+.gender > input[type="radio"]{
     position: relative;
-    width: 459px;
-    height: 49px;
-    left: 3%;
+    margin: 15px;
 }
+
+
+
+.gender input{
+    position: relative;
+}
+
 
 .signUp button {
     position: relative;
     width: 460px;
     height: 49px;
-    left: 30.5%;
+    left: 20%;
 
-    top: -140px;
+    top: 20px;
     cursor:pointer;
 
-    background-color: #0e6ac7;
+    background-color: #ddd;
     color: #ffffff;
 
     font-size: 16px;
@@ -400,4 +415,5 @@ button{
     height: 20px;
     color:red;
     font-weight: 700;
+
 }

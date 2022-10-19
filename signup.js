@@ -15,7 +15,7 @@ function changePhone3(){
     const phone3 = document.getElementById("phone3").value // 010
     if(phone3.length === 4){
       document.getElementById("sendMessage").focus();
-      document.getElementById("sendMessage").setAttribute("style","background-color:yellow;")
+      document.getElementById("sendMessage").setAttribute("style","background-color: #3e3d3b;")
       document.getElementById("sendMessage").disabled = false;
     }
 }
@@ -35,7 +35,7 @@ let processID = -1;
 const getToken = () => {
 
   // 인증확인 버튼 활성화
-  document.getElementById("completion").setAttribute("style","background-color:yellow;")
+  document.getElementById("completion").setAttribute("style","background-color:#3e3d3b;")
   document.getElementById("completion").disabled = false;
 
   if (processID != -1) clearInterval(processID);
@@ -61,7 +61,7 @@ function checkCompletion(){
   initButton();
   document.getElementById("completion").innerHTML="인증완료"
   document.getElementById("signUpButton").disabled = false;
-  document.getElementById("signUpButton").setAttribute("style","background-color:yellow;")
+  document.getElementById("signUpButton").setAttribute("style","background-color: #3e3d3b;")
 }
 
 
@@ -76,6 +76,8 @@ function signUpCheck(){
   let area = document.getElementById("area").value
   let gender_man = document.getElementById("gender_man").checked
   let gender_woman = document.getElementById("gender_woman").checked
+  let gender_nothing = document.getElementById("gender_nothing").checked
+
   let check = true;
 
   // 이메일확인
@@ -137,12 +139,15 @@ function signUpCheck(){
   }
 
   // 성별체크확인
-  if(!gender_man && !gender_woman){
+  if(!gender_man && !gender_woman && !gender_nothing){
     document.getElementById("genderError").innerHTML="성별을 선택해주세요."
     check = false
   }else{
     document.getElementById("genderError").innerHTML=""
   }
+
+
+
   
   if(check){
     document.getElementById("emailError").innerHTML=""
