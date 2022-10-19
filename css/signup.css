@@ -411,9 +411,12 @@ button{
 }
 
 .error{
+    position: relative;
     font-size: 1px;
     height: 20px;
     color:red;
     font-weight: 700;
+    left: 20%;
+
 
 }
