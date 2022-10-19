@@ -275,7 +275,7 @@ a {
     position: absolute;
     width: 400px;
     height: 60px;
-    top: 160px;
+    top: 180px;
     align-items: center;
     left: 0px;
 
@@ -308,7 +308,7 @@ a {
 
     width: 22px;
     height: 22px;
-    top: 120px;
+    top: 140px;
 
     border-radius: 70%;
 
@@ -320,7 +320,7 @@ input[type="checkbox"] + label{
     position: relative;
     width: 105px;
     height: 20px;
-    top: 115px;
+    top: 134px;
 
     font-style: normal;
     font-weight: 500;
@@ -335,7 +335,7 @@ input[type="checkbox"] + label{
     position: absolute;
     width: 103px;
     height: 20px;
-    top: 240px;
+    top: 260px;
     right: 0px;
 
 
@@ -351,7 +351,7 @@ input[type="checkbox"] + label{
     position: relative;
     width: 400px;
     height: 0px;
-    top: 140px;
+    top: 160px;
 
     border: 1px solid #ddd;
 }
@@ -361,7 +361,7 @@ input[type="checkbox"] + label{
     width: 197px;
     height: 40px;
 
-    top: 320px;
+    top: 340px;
 
     background-color: #34ae37;
     border-radius: 25.5px;
@@ -389,7 +389,7 @@ input[type="checkbox"] + label{
     height: 40px;
 
     right: 0px;
-    top: 320px;
+    top: 340px;
 
     background-color: #ffe617;
     border-radius: 25.5px;
