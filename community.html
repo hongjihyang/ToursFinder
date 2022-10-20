@@ -79,11 +79,32 @@
                 </div>
 
                 <div class="serch_box">
-                    <section id="serch_box">
-                        <option selected disabled>제목</option>
-                        <option>제목</option>
-                        <option>작성자</option>
-                    </section>
+                    <select class="form-control" id="serch_list" name="serch_list" required>
+                        <option value="" disabled selected>제목</option>
+                        <option value="title">제목</option>
+                        <option value="user_name">작성자</option>     
+                    </select>
+
+                    <input id="serch" type="text" placeholder="검색어를 입력해주세요." />
+                    <i class="fa-solid fa-magnifying-glass" id="serch_icon"></i>
+                </div>
+
+
+                <div class="free_board con">
+                    <div class="line"></div>
+                    <ul class="board_list_notice">
+                        <li class="notice">
+                            <div class="notice_box">
+                                <p>공지</p>
+                            </div>
+
+                            <div class="free_borad_title">
+                                <p>커뮤니티 이용 수칙</p>
+                            </div>
+
+                            <div class="free_borad_day" id="free_borad_day"></div>
+                        </li>
+                    </ul>
                 </div>
         
         
