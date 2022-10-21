@@ -305,18 +305,77 @@ a {
     position: relative;
     top: 40px;
     border: 1px solid #0e6ac7;
+    width: 825px;
+    left: 5%;
 }
 
 .main_box > .free_board > .board_list_notice{
-    border: 1px solid green;
+    border-bottom: 1px solid #000;
+    position: relative;
+    width: 825px;
+    height: 57px;
+    top: 4.5%;
+    left: 5%;
 
 }
 
-.main_box > .free_board > .board_list_notice > .notice{
-    border: 1px solid pink;
-
+.main_box > .free_board > .board_list_notice > .notice div{
+    border: 1px solid rgb(24, 126, 46);
     display: inline-block;
+
 }
+
+.main_box > .free_board > ul > li > .notice_box{
+    width: 100px;
+    height: 57px;
+}
+
+.main_box > .free_board > ul > li > .notice_box > p{
+    position: relative;
+    width: 50px;
+    height: 30px;
+    left: 25%;
+    top: 24.5%;
+    text-align: center;
+
+    line-height: 30px;
+
+    font-size: 15px;
+
+    color: #ffffff;
+    background-color: #0e6ac7;
+}
+
+.main_box > .free_board > ul > li > .free_borad_title {
+    position: relative;
+    width: 590px;
+    height: 57px;
+    top: -5px;
+}
+
+.main_box > .free_board > ul > li > .free_borad_title > p{
+    position: relative;
+    text-align: left;
+    top: 30%;
+    left: 5%;
+}
+
+
+.main_box > .free_board > ul > li > .free_borad_day{
+    position: relative;
+    height: 57px;
+    width: 120px;
+    top: -5px;
+}
+
+.main_box > .free_board > ul > li > .free_borad_day > section{
+    position: relative;
+    text-align: center;
+    top: 30%;
+}
+
+
+
 
 
 
