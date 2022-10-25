@@ -110,7 +110,7 @@ a {
     position: relative;
     display: inline-block;
     margin-left: 50px;
-    margin-right: 40px;
+    margin-right: 20px;
     line-height: 115px;
 }
 
@@ -237,55 +237,76 @@ div {
 
 .email input {
     position: relative;
-    width: 457px;
+    width: 390px;
     left: 20%;
+}
+
+
+.email > #doublecheck{
+    position: relative;
+    width: 65px;
+    left: 77%;
+    top: -76px;
+    height: 49px;
+
+    background-color: #ddd;
+    border: none;
+    border-radius: 5%;
+    color: #ffffff;
 }
 
 .name input {
     position: relative;
     width: 457px;
     left: 20%;
+    top: -50px;
 }
 
 .password input {
     position: relative;
     width: 457px;
     left: 20%;
+    top: -50px;
 }
 
 .passwordCheck input {
     position: relative;
     width: 457px;
     left: 20%;
+    top: -50px;
 }
 
 .phone {
     position: relative;
     justify-content: space-between;
     line-height: 35px;
-    left: 20%;
-    width: 457px;
+    left: 19%;
+    width: 480px;
+    top: -30px;
+
 }
 
 #phone1 {
-    width: 141px;
+    width: 130px;
+    margin: 5px 8px;
     text-align: center;
 }
 
 #phone2 {
-    width: 141px;
+    width: 130px;
+    margin: 0px 8px;
     text-align: center;
 }
 
 #phone3 {
-    width: 141px;
+    width: 130px;
+    margin: 0px 8px;
     text-align: center;
 }
 
 .auth {
     display: flex;
     justify-content: space-between;
-    padding-top: 40px;
 }
 
 #certificationNumber{
@@ -416,5 +437,7 @@ button{
     font-weight: 700;
     left: 20%;
 
-
+    width: 460px;
 }
+
+
