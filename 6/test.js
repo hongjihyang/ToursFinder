@@ -37,4 +37,10 @@ function test() {
             rawFile.send(null);
 
         });
+
+}
+
+function moveToMain(){
+    alert("설문조사가 완료되었습니다.")
+    location.replace("Reco.html");
 }

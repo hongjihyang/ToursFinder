@@ -11,8 +11,10 @@ function userlogin(){
       }, function(data){
         if(data=="login"){
           alert('로그인이 되었습니다.');
+          location.href = "Mainpage_login.html";
         }else{
           alert("ID 또는 PASSWORD가 틀렸습니다.");
         }
       });
 }
+

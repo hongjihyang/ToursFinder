@@ -162,7 +162,7 @@ a {
 }
 
 .login-box > .icon-box{
-    padding-top: 70px;
+    padding-top: 80px;
     padding-left: 12px;
 }
 
@@ -222,13 +222,17 @@ a {
 
 }
 
+.Sidebar > .sb > li:hover{
+    color: #0e6ac7;
+}
+
 .Sidebar >.sb > li{
     border-top: 1px solid #767676;
     text-align: center;
 
     padding: 31px;
 
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 500;
     font-style: normal;
     line-height: 32px;
@@ -266,7 +270,7 @@ a {
 }
 
 .board_list_wrap {
-    padding: 50px;
+    padding: 0px;
 
 }
 
@@ -275,7 +279,7 @@ a {
     width: 900px;
     border-top: 2px solid #0e6ac7;
     left: 12%;
-    top: -385px;
+    top: -390px;
 
 }
 
@@ -304,13 +308,19 @@ a {
     right: -69%;
 }
 
-.serch_box > #serch_icon{
+.serch_box > #serch_btn{
+    background-color: #fff;
+    border: none;
+}
+
+.serch_box > #serch_btn{
     position: relative;
-    right: -66%;
+    right: -65.5%;
     top: -375px;
     color: #000;
 
     font-size: 1.5rem;
+    
 }
 
 .board_list tr {
@@ -383,6 +393,24 @@ a {
     line-height: 28px;
 }
 
+
+
+.border_list_wrap > #wirte_btn{
+    position: absolute;
+    left: 92%;
+    top: 700px;
+
+    width: 110px;
+    height: 45px;
+
+    background-color: #0e6ac7;
+    border: none;
+    color: #fff;
+
+    font-size: 17px;
+    font-weight: 400;
+    font-style: normal;
+}
 
 
 

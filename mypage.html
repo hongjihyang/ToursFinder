@@ -14,10 +14,12 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js"></script>
     <!-- 폰트어썸 불러오기, 아이콘 사용할려면 꼭 있어야 함 -->
     <script src="https://kit.fontawesome.com/267f4ea7f6.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
 
 
     <link rel="stylesheet" href=".\css\mypage.css">
-    <script src="JS.js" defer></script>
+    <script src="mypage.js" defer></script>
 </head>
 
 <body>
@@ -30,7 +32,8 @@
             <div class="logo-box cell">
 
                 <div class="logo">
-                    <a href="mainpage.html"><img src=".\img\Logo.png" alt="로고이미지"></a>
+                    <a href="mainpage.html"><img src="img\main_Logo_img.png" alt="로고이미지"
+                            style="width: 175px; height: 191px;"></a>
                 </div>
             </div>
 
@@ -41,21 +44,19 @@
 
                     <li class="cell"><a href="tour.html" class="tour">여행지</a></li>
                     <li class="cell"><a href="community.html" class="comm">커뮤니티</a></li>
+                    <li class="cell"><a href="festival_info.html" class="reco">축제정보</a></li>
                     <li class="cell"><a href="Reco.html" class="reco">추천</a></li>
                 </ul>
 
-                <div class="icon-box cell-r">
-                    <a href="login.html"><i class="fa-regular fa-heart"></i></a>
-                    <a href="#"><i class="fa-regular fa-bell "></i></a>
-                    <a href="#" ><i class="fa-regular fa-user"></i></a>
-                </div>
 
                 <div class="login-box cell-r">
+                    <div class="icon-box">
+                        <a href="login.html"><i class="fa-regular fa-user"></i></a>
+                    </div>
                     <a href="login.html" class="login">로그인</a>
                 </div>
             </div>
 
-            <div class="topbar-line"></div>
         </div>
 
     </div>
@@ -63,66 +64,25 @@
 
     <!-- 메인 -->
 
-    <div class="Sidebar con row">   
-            <nav class="side cell">
-                <h1>마이페이지</h1>
-                <div class="line1"></div>
+    <div class="Mypage_warp con row">
+        <nav class="Sidebar">
+            <div class="title">
+                <p>마이페이지</p>
+            </div>
 
-                <ul class="sb cell">
-                    <li class="My_info"><a href="#">내 정보</a></li>
-                    <li class="My_Like"><a href="#">내가 누른 좋아요</a></li>
-                    <li class="My_write"><a href="#">내가 쓴 글</a></li>
-                    <li class="My_reco"><a href="#">추천목록</a></li>
-                </ul>
-            </nav>
-    </div>
-
-    <!-- 내정보 -->
-    <div class="My_info con row">
-        <h3>내 정보</h3>
-            <ul class="info_box cell">
-                <li class="user_name">
-                    <section class="name"><p>이름</p></section>
-                    <p>홍지향</p>
-                </li>
-                <li class="user_id">
-                    <section class="id"><p>아이디</p></section>
-                    <p>ak1409er</p>
-                </li>
-                <li class="user_pw">
-                    <section class="pw"><p>비밀번호 변경</p></section>
-                    <input id="be_pw" type="text" placeholder="현재 비밀번호">
-                    <input id="af_pw" type="text" placeholder="새 비밀번호">
-                    <input id="af_pw_ok" type="text" placeholder="새 비밀번호 확인">
-                    
-                    <p>비밀번호 변경시 유희사항</p>
-                    <p>* 8자 이상, 영문/숫자/특수문자 중 2가지 이상 입력해주세요.</p>
-                    <p>* 연속된 3자 이상의 같은 문자는 제한됩니다.</p>
-                    <p>* ID와 같은 비밀번호는 사용할 수 없습니다.</p>
-
-                </li>
-                <li class="user_email">
-                    <section class="email"><p>이메일</p></section>
-                    <p>ak1409er@daum.net</p>
-                </li>
-                <li class="user_birth">
-                    <section class="birth"><p>생년월일</p></section>
-                    <input id="year" type="text" placeholder="2022">
-                    <input id="month" type="text" placeholder="06">
-                    <input id="day" type="text" placeholder="28">
-                    <p>년</p>
-                    <p>월</p>
-                    <p>일</p>
-
-                </li>
-                <li class="user_phone">
-                    <section class="phone"><p>전화번호</p></section>
-                    <p>010 - **** - 1234</p>
-                </li>
+            <ul class="sb">
+                <li class="My_info"><a href="#">내 정보</a></li>
+                <li class="My_Like"><a href="#">내가 누른 좋아요</a></li>
+                <li class="My_write"><a href="#">내가 쓴 글</a></li>
+                <li class="My_reco"><a href="#">추천목록</a></li>
             </ul>
+        </nav>
 
-            <button id="button1">수정</button>
+        <!-- 마이페이지내용 -->
+        <!-- 내정보 -->
+
     </div>
+
 
 </body>
 

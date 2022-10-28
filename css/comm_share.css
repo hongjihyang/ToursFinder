@@ -162,7 +162,7 @@ a {
 }
 
 .login-box > .icon-box{
-    padding-top: 70px;
+    padding-top: 80px;
     padding-left: 12px;
 }
 
@@ -220,6 +220,10 @@ a {
 
     background-color: #ffffff;
 
+}
+
+.Sidebar > .sb > li:hover{
+    color: #0e6ac7;
 }
 
 .Sidebar >.sb > li{
