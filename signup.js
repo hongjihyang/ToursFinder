@@ -1,3 +1,34 @@
+//중복체크 버튼 활성화
+function btndisabled(){
+  const email = document.getElementById("email").value;
+  if(email.includes('@')&email.includes('.com')){
+    document.getElementById("doublecheck").setAttribute("style","background-color: #3e3d3b;")
+    document.getElementById("doublecheck").disabled = false;
+  }
+}
+
+//이메일 중복체크
+function emailcheck(){
+  let email = document.getElementById("email").value 
+
+  $.get(
+    "./emailcheck.php",
+    {
+      email: email
+
+  }, function(data){
+
+    if(data){
+      alert("이미 가입된 이메일입니다.");
+      document.getElementById("email").value="";
+      document.getElementById("doublecheck").disabled = true;
+      document.getElementById("doublecheck").setAttribute("style","background-color:none;")
+    }else{
+      alert("사용 가능한 이메일입니다.");
+    }
+  });
+}
+
 // 휴대폰 번호 입력 부분
 function changePhone1(){
     const phone1 = document.getElementById("phone1").value // 010
@@ -156,10 +187,27 @@ function signUpCheck(){
     document.getElementById("passwordCheckError").innerHTML=""
     document.getElementById("areaError").innerHTML=""
     document.getElementById("genderError").innerHTML=""
-    
-    //비동기 처리이벤트
-    setTimeout(function() {
-      alert("가입이 완료되었습니다.")  
-  },0);
+  
+     //php전달
+     $.get(
+      "./signup.php",
+      {
+        email: email,
+        user_name : name,
+        pw : password,
+        phone_number : Phone_Number,
+        area : area,
+        gender : gender
+       
+    }, function(data){
+      if(data){
+        alert('회원가입되었습니다.');
+        location.href = "login.html";
+      }else{
+        alert("다시 시도해주세요.");
+      }
+    });
   }
+
 }
+

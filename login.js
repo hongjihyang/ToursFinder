@@ -1,20 +1,18 @@
+function userlogin(){
+    let email = document.getElementById("id").value;
+    let password = document.getElementById("password").value;
 
-document.querySelector("#btn").addEventListener("click", () => {
-    const id = "asdfi16580";
-    const password = "1234";
- 
-    if(id == document.querySelector("#id").value) {
-        if(password == document.querySelector("#password").value) {
-            alert("환영합니다!");
-            //document.write("환영합니다!");
+     //php전달
+    $.get(
+        "./login.php",
+        {
+          email: email,
+          pw : password
+      }, function(data){
+        if(data=="login"){
+          alert('로그인이 되었습니다.');
+        }else{
+          alert("ID 또는 PASSWORD가 틀렸습니다.");
         }
-        else {
-            alert("비밀번호가 맞지 않습니다.");
-            //document.write("비밀번호가 맞지 않습니다.");
-        }
-    }
-    else {
-        alert("아이디 혹은 비밀번호가 맞지 않습니다.");
-        //document.wrtie("아이디 혹은 비밀번호가 맞지 않습니다.");
-    }
-});
+      });
+}
