@@ -1,29 +1,20 @@
 <?php
 
-    include "connect.php";
+include "connect.php";
 
-    $email = $_GET['email'];
-    $password = $_GET['pw'];
+$user_email = $_GET["user_email"];
+$user_password = $_GET["user_password"];
 
-    $sql_id = "select email from user_info where email='$email'";
-    $result_id=mysqli_query($conn, $sql_id);
 
-    $sql_pw = "select pw from user_info where pw='$password'";
-    $result_pw=mysqli_query($conn, $sql_pw);
+$sql = "select user_name from user_info where email='$user_email' and pw = '$user_password'";
+$result=mysqli_query($conn, $sql);
 
-    
-    if ($result_id and $result_pw){
-        echo "login";
-    } else{
-        echo "not login";
-    }
-    
-    /*
-    if (!$result_id){
-        echo "id틀림";
-    }
-    if(!result_pw){
-        echo "pw틀림";
-    }
-*/
+$rows = mysqli_num_rows($result);
+$board=mysqli_fetch_array($result);
+if ($rows >= 1 && $board){
+    echo $board['user_name'];
+}
+else{
+    echo "not login";
+}
 ?>
