@@ -11,7 +11,7 @@ function userlogin(){
     }, function(data){
       if(data != "not login"){
         alert(data + '님 환영합니다!');
-        location.href = "/MainPage.html"
+        location.href = "Mainpage_login.html"
       }else{
         alert("ID 또는 PASSWORD가 틀렸습니다.");
       }

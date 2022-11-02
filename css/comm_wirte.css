@@ -172,3 +172,161 @@ a {
     font-size: 16px;
     line-height: 21px;
 }
+
+/* 사이드바 */
+.Sidebar > .title{
+    position: relative;
+    width: 200px;
+    height: 136px;
+    background-color: #0e6ac7;
+}
+
+.Sidebar > .title > p{
+    position: relative;
+    text-align: center;
+    top: 50px;
+    
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 42px;
+
+    color: #ffffff;
+
+}
+
+
+.Sidebar > .sb{
+    border: 3px solid #0e6ac7;
+
+    position: relative;
+    box-sizing: border-box;
+    width: 200px;
+    height: 291px;
+
+    background-color: #ffffff;
+
+}
+
+.Sidebar > .sb > li:hover{
+    color: #0e6ac7;
+}
+
+.Sidebar >.sb > li{
+    border-top: 1px solid #767676;
+    text-align: center;
+
+    padding: 31px;
+
+    font-size: 18px;
+    font-weight: 500;
+    font-style: normal;
+    line-height: 32px;
+    color: #3e3d3b;
+}
+
+.Sidebar > .sb > .free{
+    font-weight: 600;
+    color: #0e6ac7;
+}
+
+
+/* 글쓰기 */
+.container{
+    position: relative;
+    top: 25px;
+
+}
+
+
+.container > .top > h2{
+    position: relative;
+
+    width: 307px;
+    height: 49px;
+    top: 20px;
+
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 49px;
+
+    color: #3E3D3B;
+}
+
+.container > .top> .comm_write_selcet > select{
+    position: relative;
+
+    width: 159px;
+    height: 40px;
+    left: 22%;
+    top: -23px;
+
+    font-weight: 200;
+    font-size: 14px;
+    line-height: 27px;
+    /* identical to box height */
+
+
+    color: #000000;
+}
+
+.container > .top{
+    position: relative;
+    width: 1000px;
+
+    border-bottom: 2px solid #0e6ac7;
+}
+
+.container > .write_form > .title-box > input{
+    position: relative;
+
+    width: 995px;
+    height: 53px;
+
+    left: 6.6%;
+    top: 20px;
+    background: rgba(217, 217, 217, 0.3);
+    border: 1px solid rgba(62, 61, 59, 0.8);
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 26px;
+
+    color: rgba(62, 61, 59, 0.8);
+}
+
+.container > .write_form > .content-box > #content{
+    position: relative;
+
+    width: 995px;
+    height: 300px;
+
+    left: 6.6%;
+    top: 30px;
+    background: rgba(217, 217, 217, 0.3);
+    border: 1px solid rgba(62, 61, 59, 0.8);
+
+    font-family: 'IBM Plex Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+    /* identical to box height */
+    
+    
+    color: rgba(62, 61, 59, 0.8);
+}
+
+.container > .write_form > .btn{
+    position: relative;
+    width: 100px;
+    height: 35px;
+    left: -6.7%;
+    top: 40px;
+
+    background-color: #0e6ac7;
+    border: none;
+    color: #ffffff;
+}

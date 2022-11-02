@@ -17,81 +17,86 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
 
-    <link rel="stylesheet" href=".\css\community.css">
-    <script src="community.js" defer></script>
+    <link rel="stylesheet" href="css\comm_wirte.css">
+    <script src="#" defer></script>
 </head>
 
 <body>
 
-        <!-- 상단바 -->
-        <div class="top-bar-wrap">
+    <!-- 상단바 -->
+    <div class="top-bar-wrap">
 
-            <div class="top-bar con row">
-    
-                <div class="logo-box cell">
-    
-                    <div class="logo">
-                        <a href="MainPage.html"><img src="img\main_Logo_img.png" alt="로고이미지" style="width: 175px; height: 191px;"></a>
-                    </div>
+        <div class="top-bar con row">
+
+            <div class="logo-box cell">
+
+                <div class="logo">
+                    <a href="MainPage.html"><img src="img\main_Logo_img.png" alt="로고이미지"
+                            style="width: 175px; height: 191px;"></a>
                 </div>
-    
-                <!-- 메뉴 -->
-                <div class="menu-box cell">
-    
-                    <ul class="nav-box row">
-    
-                        <li class="cell"><a href="tour.html" class="tour">여행지</a></li>
-                        <li class="cell"><a href="community.html" class="comm">커뮤니티</a></li>
-                        <li class="cell"><a href="festival_info.html" class="reco">축제정보</a></li>
-                        <li class="cell"><a href="Reco.html" class="reco">추천</a></li>
-                    </ul>
-    
-    
-                    <div class="login-box cell-r">
-                        <div class="icon-box">
-                            <a href="login.html"><i class="fa-regular fa-user"></i></a>
-                        </div>
-                        <a href="login.html" class="login">로그인</a>
-                    </div>
-                </div>
-    
             </div>
-    
+
+            <!-- 메뉴 -->
+            <div class="menu-box cell">
+
+                <ul class="nav-box row">
+
+                    <li class="cell"><a href="tour.html" class="tour">여행지</a></li>
+                    <li class="cell"><a href="community.html" class="comm">커뮤니티</a></li>
+                    <li class="cell"><a href="Reco.html" class="reco">추천</a></li>
+                    <li class="cell"><a href="surbay.html" class="surbay">설문조사</a></li>
+                </ul>
+
+
+                <div class="login-box cell-r">
+                    <div class="icon-box">
+                        <a href="login.html"><i class="fa-regular fa-user"></i></a>
+                    </div>
+                    <a href="login.html" class="login" id="email"></a>
+                </div>
+            </div>
+
         </div>
 
-        <!-- 글쓰기 -->
-        <table>
-            <tr>
-                <th colspan="2">
-                    자유게시판 글쓰기
-                </th>
-            </tr>
-            <tr>
-                <td width=50>
-                    <select>
-                        <option>유머</option>
-                        <option>뉴스</option>
-                        <option>잡담</option>
-                    </select>
-                </td>
-                <td >
-                    <input type="text" placeholder="제목을 입력하세요."
-                    maxlength=20
-                    style="width:100%" >
-                </td>
-            </tr>
-            <tr>
-                <td colspan="2" height=400>
-                    <textarea placeholder="내용을 입력하세요." style="width: 100%; height: 100%"></textarea>
-                </td>
-            </tr>
-            <tr>
-                <td colspan="2">
-                    <input type="button" value="글쓰기">
-                    <input type="button" value="목록으로">
-                </td>
-            </tr>
-        </table>
+    </div>
+
+
+
+    <!-- 글쓰기 -->
+    <div class="container con row">
+
+        <div class="top con">
+            <h2>커뮤니티 글쓰기</h2>
+
+            <div class="comm_write_selcet">
+                <select name="write_list" id="write_list" class="form-control" required>
+                    <option value="" disabled selected>자유게시판</option>
+                    <option value="title">자유게시판</option>
+                    <option value="title">여행지평점</option>
+                </select>
+            </div>
+        </div>
+
+
+
+        <!-- 글쓰기 폼 -->
+        <form action="write.jsp" method="post" class="write_form">
+            <div class="form-group title-box">
+                <!-- <label for="title">제목</label> -->
+                <!-- placeholder 속성 입력한 데이터가 없는 경우 배경으로 나타난다.실제적으로 입력을 100자까지로 지정 -->
+                <!-- required 속성을 설정하면 필수입력 사항이된다. -->
+                <!-- pattern 속성을 이용한 정규표현식으로 데이터의 유효성 검사를 할 수 있다. -->
+                <input type="text" class="form-control" id="title" placeholder="제목 입력(4-100)" name="title"
+                    maxlength="100" required="required" pattern=".{4,100}">
+            </div>
+            <div class="form-group content-box">
+                <!--  여러줄의 데이터를 입력하고 하고자 할때 textarea 태그를 사용한다. -->
+                <!--  textarea 안에 있는 모든 글자는 그대로 나타난다. 공백문자, tag, enter -->
+                <textarea class="form-control" rows="5" id="content" name="content" placeholder="내용 작성"></textarea>
+            </div>
+            <button type="submit" class="btn btn-default cell-r">작성완료</button>
+        </form>
+    </div>
 
 
 </body>
