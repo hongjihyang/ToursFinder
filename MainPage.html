@@ -20,9 +20,10 @@
 
     <link rel="stylesheet" href=".\css\mainpage.css">
     <script src="JS.js" defer></script>
+    <script src="mainPage.js" defer></script>
 </head>
 
-<body>
+<body onload="setting()">
         <!-- 상단바 -->
         <div class="top-bar-wrap">
 
@@ -95,31 +96,71 @@
            <div class="swiper_box">
             <div class="swiper-container ">
                 <div class="swiper-wrapper">
-                    <div class="swiper-slide slide">
+                    <div class="swiper-slide slide" id="slider">
                         <div class="text_box cell">
-                            <p>지금 뜨는 여행지</p>
                             <div class="title">
-                                <h1>경주<p>(Gyeongiu)</p></h1>
-                                <p>동궁과 월지</p>
+                                <h1 id="area"></h1>
+                                <p id="place"></p>
                             </div>
                             
                         </div>
-                        <img src="img\main_slide_img1.png" alt="경주">
+                        <img id = "image" src="">
                     </div>
-                    <div class="swiper-slide slide">
+
+                    <div class="swiper-slide slide" id="slider">
                         <div class="text_box cell">
                             <div class="title">
-                                <h1>담양<p>(Damyang)</p></h1>
-                                <p>죽녹원</p>
+                                <h1 id="area"></h1>
+                                <p id="place"></p>
                             </div>
                             
                         </div>
-                        <img src="img\main_slide_img2.png" alt="담양">
+                        <img id = "image" src="">
                     </div>
-                    <div class="swiper-slide slide">3</div>
-                    <div class="swiper-slide">4</div>
-                    <div class="swiper-slide">5</div>
-                    <div class="swiper-slide">6</div>
+                    
+                    <div class="swiper-slide slide" id="slider">
+                        <div class="text_box cell">
+                            <div class="title">
+                                <h1 id="area"></h1>
+                                <p id="place"></p>
+                            </div>
+                            
+                        </div>
+                        <img id = "image" src="">
+                    </div>
+
+                    <div class="swiper-slide slide" id="slider">
+                        <div class="text_box cell">
+                            <div class="title">
+                                <h1 id="area"></h1>
+                                <p id="place"></p>
+                            </div>
+                            
+                        </div>
+                        <img id = "image" src="">
+                    </div>
+
+                    <div class="swiper-slide slide" id="slider">
+                        <div class="text_box cell">
+                            <div class="title">
+                                <h1 id="area"></h1>
+                                <p id="place"></p>
+                            </div>
+                            
+                        </div>
+                        <img id = "image" src="">
+                    </div>
+
+                    <div class="swiper-slide slide" id="slider">
+                        <div class="text_box cell">
+                            <div class="title">
+                                <h1 id="area"></h1>
+                                <p id="place"></p>
+                            </div>
+                            
+                        </div>
+                        <img id = "image" src="">
+                    </div>
                 </div>
                 <!-- If we need pagination -->
                 <!-- <div class="swiper-pagination"></div> -->
