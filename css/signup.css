@@ -373,7 +373,7 @@ div {
 
 .area{
     position: relative;
-    padding-top: 40px;
+    top: 20px
 }
 
 .area select {
@@ -391,6 +391,7 @@ div {
     width: 457px;
     height: 49px;
     left: 20%;
+    top: 10px;
 
 }
 
@@ -412,7 +413,7 @@ div {
     height: 49px;
     left: 20%;
 
-    top: 20px;
+    top: 50px;
     cursor:pointer;
 
     background-color: #ddd;

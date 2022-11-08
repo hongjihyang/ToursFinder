@@ -29,7 +29,7 @@ function emailcheck(){
   });
 }
 
-// 휴대폰 번호 입력 부분
+//휴대폰 번호 입력 부분
 function changePhone1(){
     const phone1 = document.getElementById("phone1").value // 010
     if(phone1.length === 3){
@@ -122,9 +122,6 @@ function signUpCheck(){
     else{
       document.getElementById("emailError").innerHTML=""
     }
-  }else{
-    document.getElementById("emailError").innerHTML="이메일이 올바르지 않습니다."
-    check = false
   }
 
 
@@ -151,13 +148,13 @@ function signUpCheck(){
     document.getElementById("passwordError").innerHTML="비밀번호를 입력해주세요."
     check = false
   }else{
-    //document.getElementById("passwordError").innerHTML=""
+    document.getElementById("passwordError").innerHTML=""
   }
   if(passwordCheck===""){
     document.getElementById("passwordCheckError").innerHTML="비밀번호를 다시 입력해주세요."
     check = false
   }else{
-    //document.getElementById("passwordCheckError").innerHTML=""
+    document.getElementById("passwordCheckError").innerHTML=""
   }
 
 
@@ -195,7 +192,6 @@ function signUpCheck(){
         email: email,
         user_name : name,
         pw : password,
-        phone_number : Phone_Number,
         area : area,
         gender : gender
        

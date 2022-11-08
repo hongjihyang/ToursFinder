@@ -309,15 +309,33 @@ a {
 }
 
 .swiper-slide > .text_box > .title{
-    padding-top: 40px;
+    padding-top: 30px;
+}
+
+.swiper-slide > .text_box > .title h1{
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 52px;
+
+
+    color: #0e6ac7;
+}
+
+.swiper-slide > .text_box > .title p{
+    padding-top: 5px;
+
+    font-style: normal;
+    font-weight: 300;
+    line-height: 23px;
+    font-size: 18px;
+
+    color: #0e6ac7;
 }
 
 
 
 .swiper-slide > .text_box > .title > h1 p{
     display: inline;
-    font-size: 20px;
-    font-weight: 300;
 }
 
 
