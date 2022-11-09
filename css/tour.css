@@ -183,6 +183,11 @@ a {
 
 /* 메인 */
 
+.main_warp{
+    width: 100%;
+    height: 1000px;
+}
+
 
 input[type="radio"]{
     display: none;
@@ -247,10 +252,7 @@ input[id="tab05"]:checked ~ .c5{
     display: block;
 }
 
-.tab_content{
-    position: relative;
-    top: 0px;
-}
+
 
 
 .conbox > img {
@@ -379,7 +381,6 @@ input[id="tab05"]:checked ~ .c5{
     position: relative;
     top: 150px;
 }
-
 
 
 
