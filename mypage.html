@@ -20,9 +20,11 @@
 
     <link rel="stylesheet" href=".\css\mypage.css">
     <script src="mypage.js" defer></script>
+    <script src="session.js" defer></script>  <!--세션을 활용해서 유저의 로그인 체크-->
+    <script src="logOut.js" defer></script>  <!--로그아웃-->
 </head>
 
-<body>
+<body onload = "session()">
 
     <!-- 상단바 -->
     <div class="top-bar-wrap">
@@ -32,7 +34,7 @@
             <div class="logo-box cell">
 
                 <div class="logo">
-                    <a href="mainpage.html"><img src="img\main_Logo_img.png" alt="로고이미지"
+                    <a href="MainPage.html"><img src="img\main_Logo_img.png" alt="로고이미지"
                             style="width: 175px; height: 191px;"></a>
                 </div>
             </div>
@@ -51,9 +53,10 @@
 
                 <div class="login-box cell-r">
                     <div class="icon-box">
-                        <a href="login.html"><i class="fa-regular fa-user"></i></a>
+                        <a id="img_login" href="login.html"><i class="fa-regular fa-user"></i></a>
                     </div>
-                    <a href="login.html" class="login" id="id"></a>
+                    <a id="txt_login" href="login.html" class="login"></a>
+                    <button type="button" id="logOut" onclick="loginOut()">로그아웃</button>
                 </div>
             </div>
 

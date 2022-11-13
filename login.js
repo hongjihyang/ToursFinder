@@ -9,9 +9,10 @@ function userlogin(){
         user_email: email,
         user_password : password
     }, function(data){
-      if(data != "not login"){
-        alert(data + '님 환영합니다!');
-        location.href = "Mainpage_login.html"
+      if(data){
+        console.log(data);
+        alert('로그인하였습니다.');
+        location.href = "MainPage.html"
       }else{
         alert("ID 또는 PASSWORD가 틀렸습니다.");
       }

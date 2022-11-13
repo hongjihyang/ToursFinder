@@ -19,11 +19,13 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
 
     <link rel="stylesheet" href=".\css\mainpage.css">
-    <script src="JS.js" defer></script>
-    <script src="mainPage.js" defer></script>
+    <script src="JS.js" defer></script> 
+    <script src="mainPage.js" defer></script> <!-- tourAPI에서 실시간으로 여행지 정보 가져옴-->
+    <script src="session.js" defer></script>  <!--세션을 활용해서 유저의 로그인 체크-->
+    <script src="logOut.js" defer></script>  <!--로그아웃-->
 </head>
 
-<body onload="setting()">
+<body onload="setting();session()">
         <!-- 상단바 -->
         <div class="top-bar-wrap">
 
@@ -32,7 +34,7 @@
                 <div class="logo-box cell">
     
                     <div class="logo">
-                        <a href="mainpage.html"><img src="img\main_Logo_img.png" alt="로고이미지" style="width: 175px; height: 191px;"></a>
+                        <a href="MainPage.html"><img src="img\main_Logo_img.png" alt="로고이미지" style="width: 175px; height: 191px;"></a>
                     </div>
                 </div>
     
@@ -50,9 +52,11 @@
     
                     <div class="login-box cell-r">
                         <div class="icon-box">
-                            <a href="login.html"><i class="fa-regular fa-user"></i></a>
+                            <a id="img_login" href="login.html"><i class="fa-regular fa-user"></i></a>
+                            
                         </div>
-                        <a href="login.html" class="login">로그인</a>
+                        <a id="txt_login" href="login.html" class="login"></a>
+                        <button type="button" id="logOut" onclick="loginOut()">로그아웃</button>
                     </div>
                 </div>
     

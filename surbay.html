@@ -21,9 +21,11 @@
     <link rel="stylesheet" href=".\css\surbay.css">
     <script src=".\6\test.js" defer></script>
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="session.js" defer></script>  <!--세션을 활용해서 유저의 로그인 체크-->
+    <script src="logOut.js" defer></script>  <!--로그아웃-->
 </head>
 
-<body>
+<body onload = "session()">
 <!-- 상단바 -->
 <div class="top-bar-wrap">
 
@@ -50,9 +52,10 @@
 
             <div class="login-box cell-r">
                 <div class="icon-box">
-                    <a href="login.html"><i class="fa-regular fa-user"></i></a>
+                    <a id="img_login" href="login.html"><i class="fa-regular fa-user"></i></a>
                 </div>
-                <a href="login.html" class="login" id="id">로그인</a>
+                <a id="txt_login" href="login.html" class="login"></a>
+                <button type="button" id="logOut" onclick="loginOut()">로그아웃</button>
             </div>
         </div>
 
