@@ -9,7 +9,7 @@ function btndisabled(){
 
 //이메일 중복체크
 function emailcheck(){
-  let email = document.getElementById("email").value 
+  let email = document.getElementById("email").value; 
 
   $.get(
     "./emailcheck.php",

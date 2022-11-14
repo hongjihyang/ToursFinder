@@ -19,9 +19,11 @@
 
     <link rel="stylesheet" href="css\comm_share.css">
     <script src="community.js" defer></script>
+    <script src="session.js" defer></script>  <!--세션을 활용해서 유저의 로그인 체크-->
+    <script src="logOut.js" defer></script>  <!--로그아웃-->
 </head>
 
-<body>
+<body onload = "session()">
 
         <!-- 상단바 -->
         <div class="top-bar-wrap">
@@ -49,9 +51,10 @@
     
                     <div class="login-box cell-r">
                         <div class="icon-box">
-                            <a href="login.html"><i class="fa-regular fa-user"></i></a>
+                            <a id="img_login" href="login.html"><i class="fa-regular fa-user"></i></a>
                         </div>
-                        <a href="login.html" class="login">로그인</a>
+                        <a id="txt_login" href="login.html" class="login"></a>
+                        <button type="button" id="logOut" onclick="loginOut()">로그아웃</button>
                     </div>
                 </div>
     
@@ -117,50 +120,95 @@
 
                     <!-- 게시물 -->
                     <tbody class="board">
-                        <tr>
-                            <td>5</td>
+                        <tr id="top" style="display:none;">
+                            <td id="lis">10</td>
                             <td class="tit">
-                                <a href="#">여행지평점 5번째</a>
+                                <a id="a_tit" href="#">자유게시판글 10번째</a>
                             </td>
-                            <td>awdrgt115</td>
-                            <td>2022-10-25</td>
-                            <td>1</td>
+                            <td id="writer">awdrgt115</td>
+                            <td id="date">2022-10-25</td>
+                            <td id="view">1</td>
                         </tr>
-                        <tr>
-                            <td>4</td>
+                        <tr id="top" style="display:none;">
+                            <td id="lis">9</td>
                             <td class="tit">
-                                <a href="#">여행지평점 4번째</a>
+                                <a id="a_tit"  href="#">자유게시판글 9번째</a>
                             </td>
-                            <td>awdrgt115</td>
-                            <td>2022-10-25</td>
-                            <td>1</td>
+                            <td id="writer">awdrgt115</td>
+                            <td id="date">2022-10-25</td>
+                            <td id="view">1</td>
                         </tr>
-                        <tr>
-                            <td>3</td>
+                        <tr id="top" style="display:none;">
+                            <td id="lis">8</td>
                             <td class="tit">
-                                <a href="#">여행지평점 3번째</a>
+                                <a  id="a_tit" href="#">자유게시판글 8번째</a>
                             </td>
-                            <td>awdrgt115</td>
-                            <td>2022-10-25</td>
-                            <td>1</td>
+                            <td id="writer">awdrgt115</td>
+                            <td id="date">2022-10-25</td>
+                            <td id="view">1</td>
                         </tr>
-                        <tr>
-                            <td>2</td>
+                        <tr id="top" style="display:none;">
+                            <td id="lis">7</td>
                             <td class="tit">
-                                <a href="#">여행지평점 2번째</a>
+                                <a id="a_tit" href="#">자유게시판글 7번째</a>
                             </td>
-                            <td>야부리부리</td>
-                            <td>2022-09-25</td>
-                            <td>5</td>
+                            <td id="writer">awdrgt115</td>
+                            <td id="date">2022-10-25</td>
+                            <td id="view">1</td>
                         </tr>
-                        <tr>
-                            <td>1</td>
+                        <tr id="top" style="display:none;">
+                            <td id="lis">6</td>
                             <td class="tit">
-                                <a href="#">여행지평점 1번째</a>
+                                <a id="a_tit" href="#">자유게시판글 6번째</a>
                             </td>
-                            <td>awdrgt115</td>
-                            <td>2022-09-20</td>
-                            <td>1</td>
+                            <td id="writer">awdrgt115</td>
+                            <td id="date">2022-10-25</td>
+                            <td id="view">1</td>
+                        </tr>
+                        <tr id="top" style="display:none;">
+                            <td id="lis">5</td>
+                            <td class="tit">
+                                <a id="a_tit" href="#">자유게시판글 5번째</a>
+                            </td>
+                            <td id="writer">awdrgt115</td>
+                            <td id="date">2022-10-25</td>
+                            <td id="view">1</td>
+                        </tr>
+                        <tr id="top" style="display:none;">
+                            <td id="lis">4</td>
+                            <td class="tit">
+                                <a id="a_tit" href="#">자유게시판글 4번째</a>
+                            </td>
+                            <td id="writer">awdrgt115</td>
+                            <td id="date">2022-10-25</td>
+                            <td id="view">1</td>
+                        </tr>
+                        <tr id="top" style="display:none;">
+                            <td id="lis">3</td>
+                            <td class="tit">
+                                <a id="a_tit" href="#">자유게시판글 3번째</a>
+                            </td>
+                            <td id="writer">awdrgt115</td>
+                            <td id="date">2022-10-25</td>
+                            <td id="view">1</td>
+                        </tr>
+                        <tr id="top" style="display:none;">
+                            <td id="lis">2</td>
+                            <td class="tit">
+                                <a id="a_tit" href="#">자유게시판글 2번째</a>
+                            </td>
+                            <td id="writer">awdrgt115</td>
+                            <td id="date">2022-10-25</td>
+                            <td id="view">1</td>
+                        </tr>
+                        <tr id="top" style="display:none;">
+                            <td id="lis">1</td>
+                            <td class="tit">
+                                <a id="a_tit" href="#">자유게시판글 1번째</a>
+                            </td>
+                            <td id="writer">awdrgt115</td>
+                            <td id="date">2022-10-25</td>
+                            <td id="view">1</td>
                         </tr>
                     </tbody>
 
