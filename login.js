@@ -12,7 +12,7 @@ function userlogin(){
       if(data){
         console.log(data);
         alert('로그인하였습니다.');
-        location.href = "MainPage.html"
+        location.href = "Mainpage_login.html"
       }else{
         alert("ID 또는 PASSWORD가 틀렸습니다.");
       }

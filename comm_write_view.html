@@ -17,14 +17,17 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
 
-
-    <link rel="stylesheet" href=".\css\mypage.css">
-    <script src="mypage.js" defer></script>
-    <script src="session.js" defer></script>  <!--세션을 활용해서 유저의 로그인 체크-->
-    <script src="logOut.js" defer></script>  <!--로그아웃-->
+    <link rel="stylesheet" href="css\comm_write_view.css">
+    <script src="community.js" defer></script>
+    <script src="session.js" defer></script>
+    <!--세션을 활용해서 유저의 로그인 체크-->
+    <script src="logOut.js" defer></script>
+    <!--로그아웃-->
+    <script src="communitySetting.js" defer></script>
+    <!--로그아웃-->
 </head>
 
-<body onload = "session()">
+<body onload="session();commSetting()">
 
     <!-- 상단바 -->
     <div class="top-bar-wrap">
@@ -53,9 +56,9 @@
 
                 <div class="login-box cell-r">
                     <div class="icon-box">
-                        <a id="img_login" href="login.html"><i class="fa-regular fa-user"></i></a>
+                        <a id="img_login" href="mypage.html"><i class="fa-regular fa-user"></i></a>
                     </div>
-                    <a id="txt_login" href="login.html" class="login">Mypage</a>
+                    <!-- <a id="txt_login" href="login.html" class="login"></a> -->
                     <button type="button" id="logOut" onclick="loginOut()">로그아웃</button>
                 </div>
             </div>
@@ -66,25 +69,50 @@
 
 
     <!-- 메인 -->
-
-    <div class="Mypage_warp con row">
-        <nav class="Sidebar">
+    <div class="Main con row">
+        <div class="Sidebar">
             <div class="title">
-                <p>마이페이지</p>
+                <p>커뮤니티</p>
             </div>
 
             <ul class="sb">
-                <li class="My_info"><a href="#">내 정보</a></li>
-                <li class="My_Like"><a href="#">내가 누른 좋아요</a></li>
-                <li class="My_write"><a href="#">내가 쓴 글</a></li>
-                <li class="My_reco"><a href="#">추천목록</a></li>
+                <li class="free"><a href="community.html">자유게시판</a></li>
+                <li class="share"><a href="comm_share.html">여행지평점</a></li>
+                <li class="an"><a href="comm_an.html">공지사항</a></li>
             </ul>
-        </nav>
+        </div>
 
-        <!-- 마이페이지내용 -->
-        <!-- 내정보 -->
+        <!-- 글쓰기조회 -->
+        <div class="borad_view con row">
+            <div class="title">자유게시판</div>
+            <button class="back_btn" onclick="location.href='community.html'">
+                <i class="fa-solid fa-chevron-left"></i>
+                <p>전체게시글</p>
+            </button>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th id="a_tit">제목</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td id="writer">작성자</td>
+                        <td id="date">0000-00-00</td>
+                    </tr>
+                    <tr class="contnet_box">
+                        <td id="content">본문내용</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
 
     </div>
+
+
+
+
 
 
 </body>

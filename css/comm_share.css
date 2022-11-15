@@ -173,6 +173,24 @@ a {
     line-height: 21px;
 }
 
+/* 로그아웃버튼 */
+.login-box > #logOut {
+    position: relative;
+    border: none;
+    border-radius: 5px;
+    background-color: #ffffff;
+    width: 80px;
+    height: 25px;
+
+    left: -15px;
+    top: 10px;
+
+    font-size: 13px;
+    font-weight: 500;
+    font-style: normal;
+    line-height: 13px;
+}
+
 .menu-box > .nav-box > .cell > .comm{
     font-weight: 600;
     font-size: 22px;

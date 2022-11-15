@@ -178,6 +178,24 @@ a {
     font-size: 22px;
 }
 
+/* 로그아웃버튼 */
+.login-box > #logOut {
+    position: relative;
+    border: none;
+    border-radius: 5px;
+    background-color: #ffffff;
+    width: 80px;
+    height: 25px;
+
+    left: -15px;
+    top: 10px;
+
+    font-size: 13px;
+    font-weight: 500;
+    font-style: normal;
+    line-height: 13px;
+}
+
 
 /* 메인 */
 .Free_Main {
@@ -344,39 +362,6 @@ a {
 .board_list .tit:hover {
     text-decoration: underline;
 }
-
-.board_list_wrap .paging {
-    margin-top: 20px;
-    text-align: center;
-    font-size: 0;
-}
-.board_list_wrap .paging a {
-    display: inline-block;
-    margin-left: 10px;
-    padding: 5px 10px;
-    border-radius: 100px;
-    font-size: 12px;
-}
-.board_list_wrap .paging a:first-child {
-    margin-left: 0;
-}
-
-.board_list_wrap .paging a.bt {
-    border: 1px solid #eee;
-    background: #eee;
-}
-
-.board_list_wrap .paging a.num {
-    border: 1px solid #0e6ac7;
-    font-weight: 600;
-    color: green;
-}
-
-.board_list_wrap .paging a.num.on {
-    background: green;
-    color: #fff;
-}
-
 
 .Notice > tr> td .notice_box{
     position: relative;

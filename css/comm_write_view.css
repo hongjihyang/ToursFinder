@@ -4,21 +4,22 @@ body {
     overflow-y: auto;
 }
 
+
 /* 노멀라이징 */
 * {
-    margin: 0;
-    padding: 0;
+	margin: 0;
+	padding: 0;
 }
 
 ol,
 ul,
 li {
-    list-style: none;
+	list-style: none;
 }
 
 a {
-    color: inherit;
-    text-decoration: none;
+	color: inherit;
+	text-decoration: none;
 }
 
 
@@ -62,9 +63,8 @@ a {
     font-style: normal;
 }
 
-
 /* 메인 */
-.Main_Home {
+.Main_Home{
     width: 1410px;
     height: auto;
 }
@@ -173,6 +173,11 @@ a {
     line-height: 21px;
 }
 
+.menu-box > .nav-box > .cell > .comm{
+    font-weight: 600;
+    font-size: 22px;
+}
+
 /* 로그아웃버튼 */
 .login-box > #logOut {
     position: relative;
@@ -191,7 +196,16 @@ a {
     line-height: 13px;
 }
 
-/* 사이드바 */
+
+/* 메인 */
+.Main {
+    position: relative;
+    width: 1130px;
+    height: 1000px;
+    top: 100px;
+    left: 0;
+}
+
 .Sidebar > .title{
     position: relative;
     width: 200px;
@@ -248,103 +262,120 @@ a {
     color: #0e6ac7;
 }
 
+/* 게시글 조회 */
 
-/* 글쓰기 */
-.container{
+.Main > .borad_view{
     position: relative;
-    top: 25px;
 
+    width: 980px;
+    height: 700px;
+    left: 170px;
+    top: -385px;
 }
 
-
-.container > .top > h2{
+.Main > .borad_view > .title{
     position: relative;
-
-    width: 307px;
+    width: 980px;
     height: 49px;
-    top: 20px;
+    top: 0px;
+    padding-bottom: 5px;
 
+    text-align: center;
     font-style: normal;
     font-weight: 500;
-    font-size: 32px;
+    font-size: 30px;
     line-height: 49px;
-
-    color: #3E3D3B;
+    text-align: left;
 }
 
-.container > .top> .comm_write_selcet > select{
+/* 전체게시글보기 버튼 */
+.Main > .borad_view > .back_btn{
     position: relative;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
 
-    width: 159px;
-    height: 40px;
-    left: 22%;
-    top: -23px;
-
-    font-weight: 200;
-    font-size: 14px;
-    line-height: 27px;
-    /* identical to box height */
-
-
-    color: #000000;
-}
-
-.container > .top{
-    position: relative;
-    width: 1000px;
-
-    border-bottom: 2px solid #0e6ac7;
-}
-
-.container > .write_form > .title-box > input{
-    position: relative;
-
-    width: 995px;
-    height: 53px;
-
-    left: 6.6%;
-    top: 20px;
-    background: rgba(217, 217, 217, 0.3);
-    border: 1px solid rgba(62, 61, 59, 0.8);
-
-    font-style: normal;
-    font-weight: 400;
-    font-size: 15px;
-    line-height: 26px;
-
-    color: rgba(62, 61, 59, 0.8);
-}
-
-.container > .write_form > .content-box > #content{
-    position: relative;
-
-    width: 995px;
-    height: 300px;
-
-    left: 6.6%;
-    top: 30px;
-    background: rgba(217, 217, 217, 0.3);
-    border: 1px solid rgba(62, 61, 59, 0.8);
-
-    font-family: 'IBM Plex Sans';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 26px;
-    /* identical to box height */
-    
-    
-    color: rgba(62, 61, 59, 0.8);
-}
-
-.container > .write_form > .btn{
-    position: relative;
     width: 100px;
-    height: 35px;
-    left: -6.7%;
-    top: 40px;
-
-    background-color: #0e6ac7;
-    border: none;
-    color: #ffffff;
+    padding: 2px;
 }
+
+.Main > .borad_view > .back_btn> p{
+    display: inline-block;
+
+    font-size: 14px;
+}
+
+/* 게시글 */
+.Main > .borad_view > .borad {
+    position: relative;
+    border: 1px solid #0e6ac7;
+    border-radius: 5px;
+
+    width: 980px;
+    height: 500px;
+    top: 20px;
+}
+
+.Main > .borad_view > table{
+    border: 1px solid #0e6ac7;
+    position: relative;
+    top: 30px;
+    width: 980px;
+    height: 500px;
+    border-radius: 5px;
+
+    text-align: left;
+
+    display: inline-block;
+}
+
+.Main > .borad_view > table > thead > tr > #a_tit{
+    position: relative;
+
+    font-size: 25px;
+    font-weight: 600;
+    font-style: normal;
+
+    color: #000;
+    padding-left: 30px;
+    padding-top: 20px;
+}
+
+.Main > .borad_view > table > tbody > tr td {
+    display: inline-block;
+    position: relative;
+
+    font-size: 13px;
+    font-weight: 500;
+    font-style: normal;
+    color: #3e3d3b;
+
+    padding-left: 30px;
+    padding-top: 5px;
+
+}
+
+.Main > .borad_view > table > tbody > .contnet_box{
+    position: relative;
+    top: 30px;
+    
+    display: inline-block;
+    width: 930px;
+    height: 360px;
+    left: 20px;
+
+    background-color: rgba(217, 217, 217, 0.3);
+
+}
+
+.Main > .borad_view > table > tbody > .contnet_box td{
+    font-size: 15px;
+    font-weight: 500;
+    font-style: normal;
+    padding-left: 12px;
+}
+
+
+
+
+
