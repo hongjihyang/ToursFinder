@@ -22,6 +22,7 @@
     <script src="session.js" defer></script>  <!--세션을 활용해서 유저의 로그인 체크-->
     <script src="logOut.js" defer></script>  <!--로그아웃-->
     <script src="communitySetting.js" defer></script>  <!--로그아웃-->
+    <script src="comm_write_view.js" defer></script>  <!--로그아웃-->
 </head>
 
 <body onload = "session();commSetting()">
@@ -125,7 +126,7 @@
                         <tr id="top" style="display:none;">
                             <td id="lis">10</td>
                             <td class="tit">
-                                <a id="a_tit" href="comm_write_view.html"></a>
+                                <a id="a_tit" onclick="wrtie_view(0)"></a>
                             </td>
                             <td id="writer"></td>
                             <td id="date"></td>
@@ -134,7 +135,7 @@
                         <tr id="top" style="display:none;">
                             <td id="lis">9</td>
                             <td class="tit">
-                                <a id="a_tit"  href="#">자유게시판글 9번째</a>
+                                <a id="a_tit" onclick="wrtie_view(1)"></a>
                             </td>
                             <td id="writer">awdrgt115</td>
                             <td id="date">2022-10-25</td>
@@ -143,7 +144,7 @@
                         <tr id="top" style="display:none;">
                             <td id="lis">8</td>
                             <td class="tit">
-                                <a  id="a_tit" href="#">자유게시판글 8번째</a>
+                                <a id="a_tit" onclick="wrtie_view(2)"></a>
                             </td>
                             <td id="writer">awdrgt115</td>
                             <td id="date">2022-10-25</td>
@@ -152,7 +153,7 @@
                         <tr id="top" style="display:none;">
                             <td id="lis">7</td>
                             <td class="tit">
-                                <a id="a_tit" href="#">자유게시판글 7번째</a>
+                                <a id="a_tit" onclick="wrtie_view(3)"></a>
                             </td>
                             <td id="writer">awdrgt115</td>
                             <td id="date">2022-10-25</td>
@@ -161,7 +162,7 @@
                         <tr id="top" style="display:none;">
                             <td id="lis">6</td>
                             <td class="tit">
-                                <a id="a_tit" href="#">자유게시판글 6번째</a>
+                                <a id="a_tit" onclick="wrtie_view(4)"></a>
                             </td>
                             <td id="writer">awdrgt115</td>
                             <td id="date">2022-10-25</td>
@@ -170,7 +171,7 @@
                         <tr id="top" style="display:none;">
                             <td id="lis">5</td>
                             <td class="tit">
-                                <a id="a_tit" href="#">자유게시판글 5번째</a>
+                                <a id="a_tit" onclick="wrtie_view(5)"></a>
                             </td>
                             <td id="writer">awdrgt115</td>
                             <td id="date">2022-10-25</td>
@@ -179,7 +180,7 @@
                         <tr id="top" style="display:none;">
                             <td id="lis">4</td>
                             <td class="tit">
-                                <a id="a_tit" href="#">자유게시판글 4번째</a>
+                                <a id="a_tit" onclick="wrtie_view(6)"></a>
                             </td>
                             <td id="writer">awdrgt115</td>
                             <td id="date">2022-10-25</td>
@@ -188,7 +189,7 @@
                         <tr id="top" style="display:none;">
                             <td id="lis">3</td>
                             <td class="tit">
-                                <a id="a_tit" href="#">자유게시판글 3번째</a>
+                                <a id="a_tit" onclick="wrtie_view(7)"></a>
                             </td>
                             <td id="writer">awdrgt115</td>
                             <td id="date">2022-10-25</td>
@@ -197,7 +198,7 @@
                         <tr id="top" style="display:none;">
                             <td id="lis">2</td>
                             <td class="tit">
-                                <a id="a_tit" href="#">자유게시판글 2번째</a>
+                                <a id="a_tit" onclick="wrtie_view(8)"></a>
                             </td>
                             <td id="writer">awdrgt115</td>
                             <td id="date">2022-10-25</td>
@@ -206,7 +207,7 @@
                         <tr id="top" style="display:none;">
                             <td id="lis">1</td>
                             <td class="tit">
-                                <a id="a_tit" href="#">자유게시판글 1번째</a>
+                                <a id="a_tit" onclick="wrtie_view(9)"></a>
                             </td>
                             <td id="writer">awdrgt115</td>
                             <td id="date">2022-10-25</td>

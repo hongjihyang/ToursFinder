@@ -25,9 +25,10 @@
     <!--로그아웃-->
     <script src="communitySetting.js" defer></script>
     <!--로그아웃-->
+    <script src="comm_view_setting.js" defer></script>
 </head>
 
-<body onload="session();commSetting()">
+<body onload="session();viewSetting()">
 
     <!-- 상단바 -->
     <div class="top-bar-wrap">
@@ -58,7 +59,7 @@
                     <div class="icon-box">
                         <a id="img_login" href="mypage.html"><i class="fa-regular fa-user"></i></a>
                     </div>
-                    <!-- <a id="txt_login" href="login.html" class="login"></a> -->
+                    <a id="txt_login" href="login.html" class="login"></a> 
                     <button type="button" id="logOut" onclick="loginOut()">로그아웃</button>
                 </div>
             </div>
