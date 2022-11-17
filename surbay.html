@@ -23,6 +23,7 @@
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script src="session.js" defer></script>  <!--세션을 활용해서 유저의 로그인 체크-->
     <script src="logOut.js" defer></script>  <!--로그아웃-->
+    <script src="surbay.js" defer></script>  <!--로그아웃-->
 </head>
 
 <body onload = "session()">
@@ -73,40 +74,40 @@
 
     <div class="form-group con row">
         <h3>1. 가고싶은 지역을 선택하세요.(중복선택 가능)</h3>
-        <input name="box" type="checkbox" id="check1-1" value="1-1">
+        <input name="box" type="checkbox" id="check" value="1">
         <label for="check1-1">서울</label>
-        <input name="box" type="checkbox" id="check1-2" value="1-2">
+        <input name="box" type="checkbox" id="check" value="2">
         <label for="check1-2">인천</label>
-        <input name="box" type="checkbox" id="check1-3" value="1-3">
+        <input name="box" type="checkbox" id="check" value="3">
         <label for="check1-3">대전</label>
-        <input name="box" type="checkbox" id="check1-4" value="1-4">
+        <input name="box" type="checkbox" id="check" value="4">
         <label for="check1-4">대구</label>
-        <input name="box" type="checkbox" id="check1-5" value="1-5">
+        <input name="box" type="checkbox" id="check" value="5">
         <label for="check1-5">광주</label>
-        <input name="box" type="checkbox" id="check1-6" value="1-6">
+        <input name="box" type="checkbox" id="check" value="6">
         <label for="check1-6">부산</label>
-        <input name="box" type="checkbox" id="check1-7" value="1-7">
+        <input name="box" type="checkbox" id="check" value="7">
         <label for="check1-7">울산</label>
-        <input name="box" type="checkbox" id="check1-8" value="1-8">
+        <input name="box" type="checkbox" id="check" value="8">
         <label for="check1-8">세종</label>
-        <input name="box" type="checkbox" id="check1-9" value="1-9">
+        <input name="box" type="checkbox" id="check" value="31">
         <label for="check1-9">경기도</label>
-        <input name="box" type="checkbox" id="check1-10" value="1-10">
+        <input name="box" type="checkbox" id="check" value="32">
         <label for="check1-10">강원도</label>
         <br>
-        <input name="box" type="checkbox" id="check1-11" value="1-11">
+        <input name="box" type="checkbox" id="check1-11" value="33">
         <label for="check1-11">충청북도</label>
-        <input name="box" type="checkbox" id="check1-12" value="1-12">
+        <input name="box" type="checkbox" id="check1-12" value="34">
         <label for="check1-12">충청남도</label>
-        <input name="box" type="checkbox" id="check1-13" value="1-13">
+        <input name="box" type="checkbox" id="check1-13" value="35">
         <label for="check1-13">경상북도</label>
-        <input name="box" type="checkbox" id="check1-14" value="1-14">
+        <input name="box" type="checkbox" id="check1-14" value="36">
         <label for="check1-14">경상남도</label>
-        <input name="box" type="checkbox" id="check1-15" value="1-15">
+        <input name="box" type="checkbox" id="check1-15" value="37">
         <label for="check1-15">전라북도</label>
-        <input name="box" type="checkbox" id="check1-16" value="1-16">
+        <input name="box" type="checkbox" id="check1-16" value="38">
         <label for="check1-16">전라남도</label>
-        <input name="box" type="checkbox" id="check1-17" value="1-17">
+        <input name="box" type="checkbox" id="check1-17" value="39">
         <label for="check1-17">전라남도</label>
 
 
@@ -180,7 +181,7 @@
             <label for="radio18" id="check11-2">따로 계획을 세우지 않고 상황에 따라 자유롭게 움직인다.</label>
         </div>
 
-        <button id="button1" onclick="test()">전송</button>
+        <button id="button1" onclick="result()">전송</button>
         <!-- <input type="text" style="width : 800px; height : 400px "readonly> -->
 
     </div>
