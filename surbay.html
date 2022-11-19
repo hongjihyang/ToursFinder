@@ -73,7 +73,7 @@
     </div>
 
     <div class="form-group con row">
-        <h3>1. 가고싶은 지역을 선택하세요.(중복선택 가능)</h3>
+        <h3>가고싶은 지역을 선택해주세요.(중복선택 가능)</h3>
         <input name="box" type="checkbox" id="check" value="1">
         <label for="check1-1">서울</label>
         <input name="box" type="checkbox" id="check" value="2">
@@ -89,7 +89,7 @@
         <input name="box" type="checkbox" id="check" value="7">
         <label for="check1-7">울산</label>
         <input name="box" type="checkbox" id="check" value="8">
-        <label for="check1-8">세종</label>
+        <label for="check1-8">제주도</label>
         <input name="box" type="checkbox" id="check" value="31">
         <label for="check1-9">경기도</label>
         <input name="box" type="checkbox" id="check" value="32">
@@ -112,68 +112,82 @@
 
 
         <div class="Q1">
-            <p id="answer2">2. 룸메이트가 어제 다녀왔던 맛집의 위치를 물어본다.</p>
+            <p id="answer2">1. 해당 연령대를 선택해주세요.</p>
 
             <input id="radio5-1" name="ans2" type="radio" value="5" onclick="NoMultiChk(value)">
-            <label for="radio5" id="check5-1">숙소에서부터 가는 법을 알려준다.</label>
-            <br>
+            <label for="radio5" id="check5-1">10~20</label>
             <input id="radio5-2" name="ans2" type="radio" value="6" onclick="NoMultiChk(value)">
-            <label for="radio6" id="check5-2">식당 옆에 있는 큰 건물을 알려준다.</label>
+            <label for="radio6" id="check5-2">20~30</label>
+            <input id="radio5-3" name="ans2" type="radio" value="7" onclick="NoMultiChk(value)">
+            <label for="radio7" id="check5-3">30~40</label>
+            <input id="radio5-4" name="ans2" type="radio" value="8" onclick="NoMultiChk(value)">
+            <label for="radio8" id="check5-4">40대 이상</label>
         </div>
 
 
         <div class="Q2">
-            <p id="answer2-2">2-1. 빵빵한 풍선을 보면 떠오르는 생각은?</p>
-            <input id="radio6-1" name="ans3" type="radio" value="7" onclick="NoMultiChk(value)">
-            <label for="radio7" id="check6-1">풍선이 터질 것 같다.</label>
-            <br>
-            <input id="radio6-2" name="ans3" type="radio" value="8" onclick="NoMultiChk(value)">
-            <label for="radio8" id="check6-2">헬륨 가스를 마시고 목소리 변하는지 궁금하다.</label>
+            <p id="answer2-2">2. 여행을 누구랑 다니시나요?</p>
+            <input id="radio6-1" name="ans3" type="radio" value="9" onclick="NoMultiChk(value)">
+            <label for="radio9" id="check6-1">혼자 또는 두명</label>
+            <input id="radio6-2" name="ans3" type="radio" value="10" onclick="NoMultiChk(value)">
+            <label for="radio10" id="check6-2">친구들과 다같이</label>
+
+            <input id="radio6-3" name="ans3" type="radio" value="11" onclick="NoMultiChk(value)">
+            <label for="radio11" id="check6-3">연인</label>
+
+            <input id="radio6-4" name="ans3" type="radio" value="12" onclick="NoMultiChk(value)">
+            <label for="radio12" id="check6-4">가족</label>
         </div>
 
 
         <div class="Q3">
-            <p id="answer2-3">2-2. 자신에게 가까운 것을 고르시오.</p>
-            <input id="radio7-1" name="ans4" type="radio" value="9" onclick="NoMultiChk(value)">
-            <label for="radio9" id="check7-1">풍선이 터질 것 같다.</label>
+            <p id="answer2-3">3. 국내 여행을 갔다오신적이 있으신가요?(한달이내)</p>
+            <input id="radio7-1" name="ans4" type="radio" value="13" onclick="NoMultiChk(value)">
+            <label for="radio13" id="check7-1">네</label>
             <br>
-            <input id="radio7-2" name="ans4" type="radio" value="10" onclick="NoMultiChk(value)">
-            <label for="radio10" id="check7-2">헬륨 가스를 마시고 목소리 변하는지 궁금하다.</label>
+            <input id="radio7-2" name="ans4" type="radio" value="14" onclick="NoMultiChk(value)">
+            <label for="radio14" id="check7-2">아니요</label>
         </div>
 
 
         <div class="Q4">
-            <p id="answer3-1">3-1. 내가 들어가고 싶은 팀은 어떤 팀인가?</p>
-            <input id="radio8-1" name="ans5" type="radio" value="11" onclick="NoMultiChk(value)">
-            <label for="radio11" id="check8-1">풍선이 터질 것 같다.</label>
+            <p id="answer3-1">4. 주로 어떤 여행을 하시나요?</p>
+            <input id="radio8-1" name="ans5" type="radio" value="15" onclick="NoMultiChk(value)">
+            <label for="radio15" id="check8-1">활동적인 여행 (ex. 등산, 놀이공원, 루지 등)</label>
             <br>
-            <input id="radio8-2" name="ans5" type="radio" value="12" onclick="NoMultiChk(value)">
-            <label for="radio12" id="check8-2">헬륨 가스를 마시고 목소리 변하는지 궁금하다.</label>
+            <input id="radio8-2" name="ans5" type="radio" value="16" onclick="NoMultiChk(value)">
+            <label for="radio16" id="check8-2">힐링되는 여행 (ex. 미술관, 수목원, 글램핑 등)</label>
         </div>
 
 
         <div class="Q5">
-            <p id="answer3-2">3-2. 슬픔을 나눈다면?</p>
-            <input id="radio9-1" name="ans6" type="radio" value="13" onclick="NoMultiChk(value)">
-            <label for="radio13" id="check9-1">슬픔이 눈에 보이는 것도 아니고 반으로 떼서 준다고 한들 의미가 없다.</label>
+            <p id="answer3-2">5. 여행지 선정에 중요한 요소가 무엇인가요?</p>
+            <input id="radio9-1" name="ans6" type="radio" value="17" onclick="NoMultiChk(value)">
+            <label for="radio17" id="check9-1">관광지 매력도</label>
             <br>
-            <input id="radio9-2" name="ans6" type="radio" value="14" onclick="NoMultiChk(value)">
-            <label for="radio14" id="check9-2">같이 슬퍼해 주면 그 친구의 아픔이 조금 나아지지 않을까 라고 생각한다.</label>
+            <input id="radio9-2" name="ans6" type="radio" value="18" onclick="NoMultiChk(value)">
+            <label for="radio18" id="check9-2">접근성(거리, 교통편리 등)</label>
+            <br>
+            <input id="radio9-3" name="ans6" type="radio" value="19" onclick="NoMultiChk(value)">
+            <label for="radio19" id="check9-3">주변맛집</label>
         </div>
 
 
         <div class="Q6">
-            <p id="answer3-3">3-3. 자신에게 가까운 것을 고르시오.</p>
+            <p id="answer3-3">6. 어떤 계절에 여행을 다니시나요?</p>
             <input id="radio10-1" name="ans7" type="radio" value="15" onclick="NoMultiChk(value)">
-            <label for="radio15" id="check10-1">능력을 칭찬해주는 말을 좋아한다.</label>
-            <br>
+            <label for="radio15" id="check10-1">봄</label>
             <input id="radio10-2" name="ans7" type="radio" value="16" onclick="NoMultiChk(value)">
-            <label for="radio16" id="check10-2">공감해주는 말을 좋아한다.</label>
+            <label for="radio16" id="check10-2">여름</label>
+            <input id="radio10-2" name="ans7" type="radio" value="16" onclick="NoMultiChk(value)">
+            <label for="radio16" id="check10-2">가을</label>
+            <input id="radio10-2" name="ans7" type="radio" value="16" onclick="NoMultiChk(value)">
+            <label for="radio16" id="check10-2">겨울</label>
         </div>
 
 
         <div class="Q7">
-            <p id="answer4">4. 여행 갈 때</p>
+            <p id="answer4">7. 여행 갈 때</p>
             <input id="radio11-1" name="ans8" type="radio" value="17" onclick="NoMultiChk(value)">
             <label for="radio17" id="check11-1">모든 여행 일정을 시간별로 계획 세우기를 좋아한다.</label>
             <br>
